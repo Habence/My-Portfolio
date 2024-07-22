@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px ">
+    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56 ">
       <p className="text-white font-poppins font-semibold text-xl">
         <span className="text-[#FEC45D]">Vince</span> Micklay
       </p>
