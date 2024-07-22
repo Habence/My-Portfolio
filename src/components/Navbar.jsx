@@ -32,14 +32,29 @@ const Navbar = () => {
       </Slide>
       <Slide in={true} direction="left" timeout={1000}>
         <ul className="flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex">
-          <li className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 ">
-            Work
+          <li>
+            <a
+              href="#work"
+              className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 "
+            >
+              Work{" "}
+            </a>
           </li>
-          <li className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 ">
-            About
+          <li>
+            <a
+              href="#about"
+              className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 "
+            >
+              About{" "}
+            </a>
           </li>
-          <li className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 ">
-            Contact
+          <li>
+            <a
+              href="#contact"
+              className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 "
+            >
+              contact{" "}
+            </a>
           </li>
         </ul>
       </Slide>
@@ -55,9 +70,33 @@ const Navbar = () => {
           <div className="fixed top-28 bottom-0">
             <Slide in={true} timeout={1000}>
               <ul className="space-y-10 text-5xl font-bold">
-                <li className="cursor-pointer">WORK</li>
-                <li className="cursor-pointer">ABOUT</li>
-                <li className="cursor-pointer">CONTACT</li>
+                <li>
+                  <a
+                    href="#work"
+                    className="cursor-pointer"
+                    onClick={handleNav}
+                  >
+                    WORK
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#about"
+                    className="cursor-pointer"
+                    onClick={handleNav}
+                  >
+                    ABOUT
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#contact"
+                    className="cursor-pointer"
+                    onClick={handleNav}
+                  >
+                    CONTACT
+                  </a>
+                </li>
               </ul>
             </Slide>
           </div>

@@ -79,9 +79,11 @@ const Hero = () => {
 
       <div className="mt-10 ">
         <Slide in={true} timeout={1000}>
-          <p className="text-white font-semibold text-4xl xl:text-6xl">
-            Selected <span className="text-[#FEC45D]"> Works</span>
-          </p>
+          <section id="work">
+            <p className="text-white font-semibold text-4xl xl:text-6xl">
+              Selected <span className="text-[#FEC45D]"> Works</span>
+            </p>
+          </section>
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
@@ -173,9 +175,11 @@ const Hero = () => {
       </div>
       <div className="mt-10">
         <Slide in={true} timeout={1000}>
-          <p className="text-white font-semibold text-4xl xl:text-6xl">
-            About <span className="text-[#FEC45D]"> Me</span>
-          </p>
+          <section id="about">
+            <p className="text-white font-semibold text-4xl xl:text-6xl">
+              About <span className="text-[#FEC45D]"> Me</span>
+            </p>
+          </section>
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>

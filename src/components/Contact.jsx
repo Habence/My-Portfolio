@@ -12,13 +12,15 @@ import Slide from "@mui/material/Slide";
 const Contact = () => {
   return (
     <div className="flex flex-col px-10 pb-10 items-start cursor-default xs:px-12 md:px-20 sm:px- bg-[#31333b] lg:px-28 xl:px-40 2xl:px-56">
-      <div className="mt-10 ">
-        <Slide in={true} timeout={1000}>
-          <p className="text-white font-semibold text-4xl xl:text-6xl">
-            Contact <span className="text-[#FEC45D]"> Me</span>
-          </p>
-        </Slide>
-      </div>
+      <section id="contact">
+        <div className="mt-10 ">
+          <Slide in={true} timeout={1000}>
+            <p className="text-white font-semibold text-4xl xl:text-6xl">
+              Contact <span className="text-[#FEC45D]"> Me</span>
+            </p>
+          </Slide>
+        </div>
+      </section>
       <Slide in={true} direction="up" timeout={1000}>
         <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
       </Slide>
