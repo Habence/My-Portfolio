@@ -1,6 +1,10 @@
 import React, { useState } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
+import { FaFacebookSquare } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaTelegram } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
@@ -28,12 +32,30 @@ const Navbar = () => {
       </ul>
 
       {nav && (
-        <div className="fixed inset-0 bg-black text-white text-center z-40 md:hidden">
-          <ul className="pt-20">
-            <li className="p-4 border-b-2">Work</li>
-            <li className="p-4 border-b-2">About</li>
-            <li className="p-4 border-b-2">Contact</li>
-          </ul>
+        <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40 md:hidden">
+          <div className="absolute top-[22rem] left-2  transform -translate-y-52">
+            <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
+              <span className="text-yellow-400"> MENU</span>
+            </p>
+          </div>
+
+          <div className="fixed top-28 bottom-0">
+            <ul className="space-y-10 text-5xl font-bold">
+              <li className="cursor-pointer">WORK</li>
+              <li className="cursor-pointer">ABOUT</li>
+              <li className="cursor-pointer">CONTACT</li>
+            </ul>
+          </div>
+          <div className="mt-40 flex flex-col gap-4">
+            <p className="font-bold">micklayvince@gmail.com</p>
+            <p className="font-bold">+63 (908) 579-6392</p>
+          </div>
+          <div className="flex gap-5 mt-8">
+            <FaFacebookSquare size={30} />
+            <FaInstagram size={30} />
+            <FaTelegram size={30} />
+            <FaLinkedin size={30} />
+          </div>
         </div>
       )}
     </div>
