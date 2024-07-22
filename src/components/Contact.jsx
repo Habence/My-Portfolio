@@ -10,7 +10,7 @@ import { FaArrowRight } from "react-icons/fa";
 
 const Contact = () => {
   return (
-    <div className="flex flex-col px-10 pb-10 items-start cursor-default xs:px-12 md:px-20 sm:px- bg-black rounded-md ">
+    <div className="flex flex-col px-10 pb-10 items-start cursor-default xs:px-12 md:px-20 sm:px- bg-black ">
       <div className="mt-10 ">
         <p className="text-white font-semibold text-4xl ">
           Contact <span className="text-[#FEC45D]"> Me</span>
