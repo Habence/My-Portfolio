@@ -14,9 +14,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default">
+    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-14 max-sm:px-20 sm:px- md:px ">
       <p className="text-white font-poppins font-semibold">
-        <span className="text-yellow-400">Vince</span> Micklay
+        <span className="text-[#FEC45D]">Vince</span> Micklay
       </p>
       <div onClick={handleNav} className="cursor-pointer z-50 md:hidden">
         {nav ? (

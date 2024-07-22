@@ -2,7 +2,11 @@
 export default {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
-    extend: {},
+    extend: {
+      screens: {
+        xs: { max: "500px" }, // Custom breakpoint for screens below 500px
+      },
+    },
     fontFamily: {
       poppins: ["Poppins", "sans-serif"],
     },

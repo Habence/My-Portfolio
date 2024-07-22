@@ -6,3 +6,8 @@ body {
   margin: 0;
   background-color: #171717;
 }
+
+.pink {
+  background-color: linear-gradient(90deg, #f4c4f3 0%, #fc67fa 100%);
+  filter: blur(900px);
+}
