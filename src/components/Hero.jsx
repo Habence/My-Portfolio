@@ -1,19 +1,39 @@
 import React from "react";
+import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
-import bence from "../../public/bence.png";
+import bence from "../../public/Bence.png";
 import film from "../../public/film.png";
 import finance from "../../public/finance.png";
 import perfume from "../../public/perfume.png";
+import html from "../../public/html-5.png";
+import css from "../../public/css-3.png";
+import js from "../../public/js.png";
+import react from "../../public/react.png";
+import firebase from "../../public/firebase.png";
+import mysql from "../../public/mysql.png";
+import php from "../../public/php.png";
+import git from "../../public/git.png";
+import vscode from "../../public/vscode.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col px-10 py-20 items-start ">
-      <div className="relative mx-auto bg-gradient-to-b rounded-full w-80 h-80  overflow-hidden mb-4 md:h-96 md:w-96 max-sm:h-[220px] max-sm:w-[220px]">
+    <div className="flex flex-col px-10 py-10 items-start ">
+      <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80  overflow-hidden mb-4 md:h-96 md:w-96 max-sm:h-[220px] max-sm:w-[220px]">
         <img src={bence} className="object-cover w-full h-full" />
+        <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-lg"></div>
       </div>
 
       <p className="text-white font-poppins font-normal text-lg leading-relaxed">
-        <span className="text-yellow-400 font-semibold">Web Developer</span>{" "}
+        <span className="text-yellow-400 font-semibold">
+          {" "}
+          Web{" "}
+          <ReactTyped
+            strings={["Developer"]}
+            typeSpeed={200}
+            backSpeed={200}
+            loop
+          />
+        </span>{" "}
         based in Baguio City, Philippines.
         <br />
         Bachelor of Science in IT from the{" "}
@@ -40,7 +60,7 @@ const Hero = () => {
       </p>
       <a
         href="/RESUME - Micklay_Vince.pdf"
-        className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem]"
+        className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300"
       >
         CHECK MY RESUME <FaArrowRight className="ml-1" />
       </a>
@@ -51,7 +71,7 @@ const Hero = () => {
       <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
 
       <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal">
-        <div>
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 duration-300 cursor-default">
           <img
             src={film}
             alt="film"
@@ -62,12 +82,12 @@ const Hero = () => {
             href="https://film-project-indol.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 text-yellow-400 font-poppins flex font-normal text-xs uppercase "
+            className="ml-2 text-yellow-400 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer"
           >
             View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
           </a>
         </div>
-        <div>
+        <div className="w-full shadow-xl rounded-xl  hover:scale-105 duration-300 cursor-default">
           <img
             src={finance}
             alt="finance"
@@ -78,12 +98,12 @@ const Hero = () => {
             href="https://finance-project-pink.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 text-yellow-400 font-poppins flex font-normal text-xs uppercase "
+            className="ml-2 text-yellow-400 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer"
           >
             View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
           </a>
         </div>
-        <div>
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 duration-300 cursor-default">
           <img
             src={perfume}
             alt="perfume"
@@ -91,10 +111,10 @@ const Hero = () => {
           />
           <p className="ml-2 my-2">Perfume Website</p>
           <a
-            href="https://vercel.com/bences-projects-a1571fc8/perfume"
+            href="https://perfume-rho.vercel.app/"
             target="_blank"
             rel="noopener noreferrer"
-            className="ml-2 text-yellow-400 font-poppins flex font-normal text-xs uppercase "
+            className="ml-2 text-yellow-400 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer"
           >
             View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
           </a>
@@ -127,12 +147,110 @@ const Hero = () => {
           collaborate with experienced professionals to drive digital
           transformation and innovative solutions.
         </p>
-        <a
-          href="/RESUME - Micklay_Vince.pdf"
-          className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem]"
-        >
-          CHECK MY RESUME <FaArrowRight className="ml-1" />
-        </a>
+      </div>
+      <a
+        href="/RESUME - Micklay_Vince.pdf"
+        className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300"
+      >
+        CHECK MY RESUME <FaArrowRight className="ml-1" />
+      </a>
+
+      <div className="mt-10 ">
+        <p className="text-white font-semibold text-4xl">Skills & Knowledge</p>
+      </div>
+      <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
+
+      <div className="flex flex-wrap flex-row gap-4 mt-10 justify-center">
+        <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className="flex justify-center">
+              <img src={html} alt="" className="h-10" />
+              <img src={css} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              Html & CSS
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={js} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              JavaScript
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={react} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              ReactJS
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={firebase} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              Firebase
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={mysql} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              MySQL
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={php} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              PHP
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={git} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              Git Source <br />
+              Control
+            </p>
+          </div>
+        </div>
+
+        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 duration-300">
+          <div className="w-32 h-32 py-9 flex flex-col cursor-default">
+            <div className=" flex justify-center">
+              <img src={vscode} alt="" className="h-10" />
+            </div>
+            <p className="text-center mt-2 font-poppins font-semibold text-xs">
+              Visual Studio <br />
+              Code
+            </p>
+          </div>
+        </div>
       </div>
     </div>
   );
