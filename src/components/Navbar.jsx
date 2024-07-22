@@ -46,7 +46,7 @@ const Navbar = () => {
               <li className="cursor-pointer">CONTACT</li>
             </ul>
           </div>
-          <div className="mt-40 flex flex-col gap-4">
+          <div className="mt-56 flex flex-col gap-4">
             <p className="font-bold">micklayvince@gmail.com</p>
             <p className="font-bold">+63 (908) 579-6392</p>
           </div>
