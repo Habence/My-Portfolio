@@ -14,7 +14,7 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-row px-10 py-10 justify-between items-center relative">
+    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default">
       <p className="text-white font-poppins font-semibold">
         <span className="text-yellow-400">Vince</span> Micklay
       </p>
@@ -26,9 +26,9 @@ const Navbar = () => {
         )}
       </div>
       <ul className="flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex">
-        <li>Work</li>
-        <li>About</li>
-        <li>Contact</li>
+        <li className="cursor-pointer">Work</li>
+        <li className="cursor-pointer">About</li>
+        <li className="cursor-pointer">Contact</li>
       </ul>
 
       {nav && (

@@ -17,7 +17,7 @@ import vscode from "../../public/vscode.png";
 
 const Hero = () => {
   return (
-    <div className="flex flex-col px-10 py-10 items-start ">
+    <div className="flex flex-col px-10 py-10 items-start cursor-default">
       <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80  overflow-hidden mb-4 md:h-96 md:w-96 max-sm:h-[220px] max-sm:w-[220px]">
         <img src={bence} className="object-cover w-full h-full" />
         <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-lg"></div>
