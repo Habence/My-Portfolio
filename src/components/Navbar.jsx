@@ -14,15 +14,15 @@ const Navbar = () => {
   };
 
   return (
-    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-14 max-sm:px-20 sm:px- md:px ">
-      <p className="text-white font-poppins font-semibold">
+    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px ">
+      <p className="text-white font-poppins font-semibold text-xl">
         <span className="text-[#FEC45D]">Vince</span> Micklay
       </p>
       <div onClick={handleNav} className="cursor-pointer z-50 md:hidden">
         {nav ? (
           <IoIosClose size={30} color="white" />
         ) : (
-          <HiMenuAlt3 size={25} color="white" />
+          <HiMenuAlt3 size={32} color="white" />
         )}
       </div>
       <ul className="flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex">
