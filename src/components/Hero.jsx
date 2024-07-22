@@ -1,7 +1,7 @@
 import React from "react";
 import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
-import bence from "../../public/Bence.png";
+import bence from "../../public/bence.png";
 import film from "../../public/film.png";
 import finance from "../../public/finance.png";
 import perfume from "../../public/perfume.png";
