@@ -66,7 +66,9 @@ const Hero = () => {
       </a>
 
       <div className="mt-10 ">
-        <p className="text-white font-semibold text-4xl">Selected Works</p>
+        <p className="text-white font-semibold text-4xl">
+          Selected <span className="text-yellow-400"> Works</span>
+        </p>
       </div>
       <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
 
@@ -122,7 +124,9 @@ const Hero = () => {
       </div>
 
       <div className="mt-10">
-        <p className="text-white font-semibold text-4xl">About Me</p>
+        <p className="text-white font-semibold text-4xl">
+          About <span className="text-yellow-400"> Me</span>
+        </p>
       </div>
       <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
       <div className="mt-10 text-white font-poppins font-normal text-xs leading-relaxed">
@@ -156,7 +160,9 @@ const Hero = () => {
       </a>
 
       <div className="mt-10 ">
-        <p className="text-white font-semibold text-4xl">Skills & Knowledge</p>
+        <p className="text-white font-semibold text-4xl">
+          Skills & <span className="text-yellow-400"> Knowledge</span>
+        </p>
       </div>
       <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
 
