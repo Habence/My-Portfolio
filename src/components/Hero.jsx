@@ -24,7 +24,7 @@ const Hero = () => {
       </div>
 
       <p className="text-white font-poppins font-normal text-lg leading-relaxed">
-        <span className="text-yellow-400 font-semibold">
+        <span className="text-yellow-400 font-semibold text-2xl uppercase">
           {" "}
           Web{" "}
           <ReactTyped
