@@ -183,7 +183,7 @@ const Hero = () => {
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-[#FEC45D]w-full mt-4"></div>
+        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
       </Slide>
       <div className="mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-50">
         <Zoom in={true} timeout={1000}>
