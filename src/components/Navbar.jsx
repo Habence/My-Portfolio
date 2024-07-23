@@ -61,42 +61,50 @@ const Navbar = () => {
 
       {nav && (
         <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40 md:hidden">
-          <div className="absolute top-[22rem] left-2  transform -translate-y-52">
-            <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
-              <span className="text-yellow-400"> MENU</span>
-            </p>
-          </div>
+          <Slide in={true} direction="right" timeout={1000}>
+            <div className="absolute top-[9rem] left-2  transform -translate-y-52">
+              <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
+                <span className="text-yellow-400"> MENU</span>
+              </p>
+            </div>
+          </Slide>
 
           <div className="fixed top-28 bottom-0">
             <Slide in={true} timeout={1000}>
               <ul className="space-y-10 text-5xl font-bold">
-                <li>
-                  <a
-                    href="#work"
-                    className="cursor-pointer"
-                    onClick={handleNav}
-                  >
-                    WORK
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#about"
-                    className="cursor-pointer"
-                    onClick={handleNav}
-                  >
-                    ABOUT
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="#contact"
-                    className="cursor-pointer"
-                    onClick={handleNav}
-                  >
-                    CONTACT
-                  </a>
-                </li>
+                <Slide in={true} direction="right" timeout={1000}>
+                  <li>
+                    <a
+                      href="#work"
+                      className="cursor-pointer"
+                      onClick={handleNav}
+                    >
+                      WORK
+                    </a>
+                  </li>
+                </Slide>
+                <Slide in={true} direction="left" timeout={1000}>
+                  <li>
+                    <a
+                      href="#about"
+                      className="cursor-pointer"
+                      onClick={handleNav}
+                    >
+                      ABOUT
+                    </a>
+                  </li>
+                </Slide>
+                <Slide in={true} direction="up" timeout={1000}>
+                  <li>
+                    <a
+                      href="#contact"
+                      className="cursor-pointer"
+                      onClick={handleNav}
+                    >
+                      CONTACT
+                    </a>
+                  </li>
+                </Slide>
               </ul>
             </Slide>
           </div>

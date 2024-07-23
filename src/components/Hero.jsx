@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
 import bence from "../../public/bence.png";
@@ -17,8 +17,14 @@ import git from "../../public/git.png";
 import vscode from "../../public/vscode.png";
 import Zoom from "@mui/material/Zoom";
 import Slide from "@mui/material/Slide";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Hero = () => {
+  useEffect(() => {
+    AOS.init({ duration: 1000 });
+  }, []);
+
   return (
     <div className="flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56">
       <div className=" w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse">
@@ -70,27 +76,36 @@ const Hero = () => {
           </Slide>
           <a
             href="/RESUME - Micklay_Vince.pdf"
-            className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300"
+            className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
           >
             CHECK MY RESUME <FaArrowRight className="ml-1" />
           </a>
         </div>
       </div>
 
-      <div className="mt-10 ">
+      <div className="mt-10">
         <Slide in={true} timeout={1000}>
           <section id="work">
-            <p className="text-white font-semibold text-4xl xl:text-6xl">
+            <p
+              data-aos="fade-right"
+              className="text-white font-semibold text-4xl xl:text-6xl"
+            >
               Selected <span className="text-[#FEC45D]"> Works</span>
             </p>
           </section>
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
+        <div
+          data-aos="slide-up"
+          className="border-b-2 border-[#FEC45D] w-full my-8"
+        ></div>
       </Slide>
       <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-row md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:grid 2xl:grid-cols-2">
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          data-aos="fade-down"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
           <Zoom in={true} timeout={1000}>
             <img
               src={film}
@@ -111,7 +126,10 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          data-aos="fade-down"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
           <Zoom in={true} timeout={1000}>
             <img
               src={finance}
@@ -131,7 +149,10 @@ const Hero = () => {
             View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
           </a>
         </div>
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          data-aos="fade-down"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
           <Zoom in={true} timeout={1000}>
             <img
               src={perfume}
@@ -152,7 +173,10 @@ const Hero = () => {
           </a>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          data-aos="fade-down"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
           <Zoom in={true} timeout={1000}>
             <img
               src={notes}
@@ -173,19 +197,28 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="mt-10">
+      <div className="mt-10 2xl:mt-28">
         <Slide in={true} timeout={1000}>
           <section id="about">
-            <p className="text-white font-semibold text-4xl xl:text-6xl">
+            <p
+              data-aos="fade-right"
+              className="text-white font-semibold text-4xl xl:text-6xl"
+            >
               About <span className="text-[#FEC45D]"> Me</span>
             </p>
           </section>
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
+        <div
+          data-aos="fade-up"
+          className="border-b-2 border-[#FEC45D] w-full my-8"
+        ></div>
       </Slide>
-      <div className="mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-50">
+      <div
+        data-aos="fade-left"
+        className="mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-[20rem] 2xl:text-lg"
+      >
         <Zoom in={true} timeout={1000}>
           <p className="">
             I am Vince Micklay, a Web Developer based in Baguio City,
@@ -215,11 +248,11 @@ const Hero = () => {
       </div>
       <a
         href="/RESUME - Micklay_Vince.pdf"
-        className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300"
+        className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[14px]"
       >
         CHECK MY RESUME <FaArrowRight className="ml-1" />
       </a>
-      <div className="mt-10 ">
+      <div data-aos="fade-right" className="mt-10 2xl:mt-28 ">
         <Slide in={true} timeout={1000}>
           <p className="text-white font-semibold text-4xl xl:text-6xl">
             Skills & <span className="text-[#FEC45D]"> Knowledge</span>
@@ -227,9 +260,15 @@ const Hero = () => {
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
+        <div
+          data-aos="fade-up"
+          className="border-b-2 border-[#FEC45D] w-full my-8"
+        ></div>
       </Slide>
-      <div className="flex flex-wrap flex-row gap-4 mt-10 justify-between">
+      <div
+        data-aos="fade-up"
+        className="flex flex-wrap flex-row gap-4 mt-10 justify-between"
+      >
         <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
             <div className="flex justify-center">
