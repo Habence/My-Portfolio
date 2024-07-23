@@ -101,8 +101,8 @@ const Hero = () => {
           className="border-b-2 border-[#FEC45D] w-full my-8"
         ></div>
       </Slide>
-      <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-row md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2">
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+      <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-col md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2">
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
           <div data-aos="fade-down">
             <Zoom in={true} timeout={1000}>
               <img
@@ -125,7 +125,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
           <div data-aos="fade-down">
             <Zoom in={true} timeout={1000}>
               <img
@@ -148,7 +148,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
           <div data-aos="fade-down">
             <Zoom in={true} timeout={1000}>
               <img
@@ -171,7 +171,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
           <div data-aos="fade-down">
             <Zoom in={true} timeout={1000}>
               <img
@@ -213,7 +213,7 @@ const Hero = () => {
         ></div>
       </Slide>
       <div
-        data-aos="fade-left"
+        data-aos="fade-right"
         className="mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-[20rem] 2xl:text-lg"
       >
         <Zoom in={true} timeout={1000}>
