@@ -101,100 +101,97 @@ const Hero = () => {
           className="border-b-2 border-[#FEC45D] w-full my-8"
         ></div>
       </Slide>
-      <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-row md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:grid 2xl:grid-cols-2">
-        <div
-          data-aos="fade-down"
-          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
-        >
-          <Zoom in={true} timeout={1000}>
-            <img
-              src={film}
-              alt="film"
-              className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
-            />
-          </Zoom>
-          <Slide in={true} direction="right" timeout={1000}>
-            <p className="ml-2 my-2 2xl:text-xl">Movie Website</p>
-          </Slide>
-          <a
-            href="https://film-project-indol.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
-          >
-            View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
-          </a>
+      <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-row md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2">
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+          <div data-aos="fade-down">
+            <Zoom in={true} timeout={1000}>
+              <img
+                src={film}
+                alt="film"
+                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+              />
+            </Zoom>
+            <Slide in={true} direction="right" timeout={1000}>
+              <p className="ml-2 my-2 2xl:text-xl">Movie Website</p>
+            </Slide>
+            <a
+              href="https://film-project-indol.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+            >
+              View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
+            </a>
+          </div>
         </div>
 
-        <div
-          data-aos="fade-down"
-          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
-        >
-          <Zoom in={true} timeout={1000}>
-            <img
-              src={finance}
-              alt="finance"
-              className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
-            />
-          </Zoom>
-          <Slide in={true} direction="left" timeout={1000}>
-            <p className="ml-2 my-2 2xl:text-xl">Finance Website</p>
-          </Slide>
-          <a
-            href="https://finance-project-pink.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
-          >
-            View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
-          </a>
-        </div>
-        <div
-          data-aos="fade-down"
-          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
-        >
-          <Zoom in={true} timeout={1000}>
-            <img
-              src={perfume}
-              alt="perfume"
-              className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
-            />
-          </Zoom>
-          <Slide in={true} direction="right" timeout={1000}>
-            <p className="ml-2 my-2 2xl:text-xl">Perfume Website</p>
-          </Slide>
-          <a
-            href="https://perfume-rho.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
-          >
-            View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
-          </a>
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+          <div data-aos="fade-down">
+            <Zoom in={true} timeout={1000}>
+              <img
+                src={finance}
+                alt="finance"
+                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+              />
+            </Zoom>
+            <Slide in={true} direction="left" timeout={1000}>
+              <p className="ml-2 my-2 2xl:text-xl">Finance Website</p>
+            </Slide>
+            <a
+              href="https://finance-project-pink.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+            >
+              View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
+            </a>
+          </div>
         </div>
 
-        <div
-          data-aos="fade-down"
-          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
-        >
-          <Zoom in={true} timeout={1000}>
-            <img
-              src={notes}
-              alt="notes"
-              className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
-            />
-          </Zoom>
-          <Slide in={true} direction="left" timeout={1000}>
-            <p className="ml-2 my-2 2xl:text-xl">Keeper Notes Website</p>
-          </Slide>
-          <a
-            href="https://keepernotesbence.vercel.app/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
-          >
-            View Website <FaArrowRight className="ml-1 mt-[0.10rem] " />
-          </a>
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+          <div data-aos="fade-down">
+            <Zoom in={true} timeout={1000}>
+              <img
+                src={perfume}
+                alt="perfume"
+                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+              />
+            </Zoom>
+            <Slide in={true} direction="right" timeout={1000}>
+              <p className="ml-2 my-2 2xl:text-xl">Perfume Website</p>
+            </Slide>
+            <a
+              href="https://perfume-rho.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+            >
+              View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
+            </a>
+          </div>
+        </div>
+
+        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+          <div data-aos="fade-down">
+            <Zoom in={true} timeout={1000}>
+              <img
+                src={notes}
+                alt="notes"
+                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+              />
+            </Zoom>
+            <Slide in={true} direction="left" timeout={1000}>
+              <p className="ml-2 my-2 2xl:text-xl">Keeper Notes Website</p>
+            </Slide>
+            <a
+              href="https://keepernotesbence.vercel.app/"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+            >
+              View Website <FaArrowRight className="ml-1 mt-[0.10rem] " />
+            </a>
+          </div>
         </div>
       </div>
       <div className="mt-10 2xl:mt-28">
@@ -266,7 +263,7 @@ const Hero = () => {
         ></div>
       </Slide>
       <div
-        data-aos="fade-up"
+        data-aos="fade-down"
         className="flex flex-wrap flex-row gap-4 mt-10 justify-between"
       >
         <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">

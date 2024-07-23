@@ -39,11 +39,11 @@ const Contact = () => {
         <FaArrowRight className="ml-2" />
       </div>
 
-      <div className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center ">
-        <div
-          data-aos="fade-up"
-          className=" flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300"
-        >
+      <div
+        data-aos="fade-up"
+        className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center "
+      >
+        <div className=" flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300">
           <MdEmail size={30} color="#FEC45D" className="" />
           <Slide in={true} direction="right" timeout={1000}>
             <div className="mt-1">
@@ -54,10 +54,7 @@ const Contact = () => {
           </Slide>
         </div>
 
-        <div
-          data-aos="fade-up"
-          className=" flex shadow-2xl rounded-md gap-4 p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300"
-        >
+        <div className=" flex shadow-2xl rounded-md gap-4 p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300">
           <FaPhoneAlt size={30} color="#FEC45D" className="" />
           <Slide in={true} direction="right" timeout={1000}>
             <div className="mt-1">
@@ -68,10 +65,7 @@ const Contact = () => {
           </Slide>
         </div>
 
-        <div
-          data-aos="fade-up"
-          className=" flex shadow-2xl rounded-md gap-4 p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300"
-        >
+        <div className=" flex shadow-2xl rounded-md gap-4 p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300">
           <FaLocationDot size={30} color="#FEC45D" className="" />
           <Slide in={true} direction="right" timeout={1000}>
             <div className="mt-1">
