@@ -87,7 +87,7 @@ const Hero = () => {
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
+        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
       </Slide>
       <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-row md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:grid 2xl:grid-cols-2">
         <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[24rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
@@ -183,7 +183,7 @@ const Hero = () => {
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
+        <div className="border-b-2 border-[#FEC45D]w-full mt-4"></div>
       </Slide>
       <div className="mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-50">
         <Zoom in={true} timeout={1000}>
@@ -227,7 +227,7 @@ const Hero = () => {
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
+        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
       </Slide>
       <div className="flex flex-wrap flex-row gap-4 mt-10 justify-between">
         <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">

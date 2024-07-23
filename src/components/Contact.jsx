@@ -22,7 +22,7 @@ const Contact = () => {
         </div>
       </section>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
+        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
       </Slide>
 
       <div className="flex items-center font-poppins font-normal text-md text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300">
@@ -76,7 +76,7 @@ const Contact = () => {
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
-        <div className="border-b-2 border-yellow-400 w-full mt-4"></div>
+        <div className="border-b-2 border-[#FEC45D] w-full mt-4"></div>
       </Slide>
       <div className="flex justify-center w-full py-10">
         <Slide in={true} direction="up" timeout={1000}>
