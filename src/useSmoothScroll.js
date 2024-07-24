@@ -7,6 +7,10 @@ const useSmoothScroll = () => {
       speed: 800,
       speedAsDuration: true,
     });
+
+    return () => {
+      scroll.destroy();
+    };
   }, []);
 };
 
