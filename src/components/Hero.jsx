@@ -280,7 +280,7 @@ const Hero = () => {
       >
         <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className="flex justify-center">
@@ -301,7 +301,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
@@ -319,7 +319,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
@@ -337,7 +337,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
@@ -355,7 +355,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
@@ -373,7 +373,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
@@ -391,7 +391,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
@@ -409,7 +409,7 @@ const Hero = () => {
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
           <div
-            data-aos="fade-left"
+            data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
           >
             <div data-aos="fade-right" className=" flex justify-center">
