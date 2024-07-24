@@ -31,7 +31,7 @@ const Hero = () => {
       <div className=" w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse">
         <Zoom in={true} timeout={1000}>
           {/* ============== //MY IMAGE ============== */}
-          <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
+          <div className="relative hover:animate-pulse  mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <Zoom in={true} timeout={1000}>
               <img src={bence} className="object-cover w-full h-full " />
             </Zoom>
@@ -40,20 +40,21 @@ const Hero = () => {
         </Zoom>
 
         {/* ============== //MAIN INRTODUCTION ============== */}
-        <div className="md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center">
+        <div className=" md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center">
           <Slide in={true} timeout={1000}>
-            <div className="">
+            <div className="xs:mt-10 sm:mt-10">
               <p className="text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl">
-                <span className="text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl">
-                  {" "}
-                  Web{" "}
-                  <ReactTyped
-                    strings={["Developer"]}
-                    typeSpeed={200}
-                    backSpeed={200}
-                    loop
-                  />
-                </span>{" "}
+                <div>
+                  <span className="text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl">
+                    {" "}
+                    <ReactTyped
+                      strings={[" Web Developer"]}
+                      typeSpeed={40}
+                      backSpeed={40}
+                      loop
+                    />
+                  </span>{" "}
+                </div>
                 based in Baguio City, Philippines.
                 <br />
                 Bachelor of Science in IT from the{" "}
