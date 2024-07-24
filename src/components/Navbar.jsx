@@ -12,22 +12,19 @@ import Slide from "@mui/material/Slide";
 const Navbar = () => {
   const [nav, setNav] = useState(false);
 
-  //When nav is true (menu is open), it adds the overflow-hidden
-  //class to the <body> element, preventing scrolling.
-  useEffect(() => {
-    if (nav) {
-      document.body.classList.add("overflow-hidden");
-
-      //When nav is false (menu is closed), it removes the overflow-hidden
-      //class from the <body> element, allowing scrolling.
-    } else {
-      document.body.classList.remove("overflow-hidden");
-    }
-  }, [nav]);
-
   const handleNav = () => {
     setNav(!nav);
   };
+  //When nav is true (menu is open), it adds the overflow-hidden
+  //class to the <body> element, preventing scrolling.
+  if (nav) {
+    document.body.style.overflowY = "hidden";
+
+    //When nav is false (menu is closed), it removes the overflow-hidden
+    //class from the <body> element, allowing scrolling.
+  } else {
+    document.body.style.overflowY = "scroll";
+  }
 
   return (
     <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56 ">
@@ -47,29 +44,17 @@ const Navbar = () => {
       </Slide>
       <Slide in={true} direction="left" timeout={1000}>
         <ul className="flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex">
-          <li>
-            <a
-              href="#work"
-              className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 "
-            >
-              Work{" "}
-            </a>
+          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+            <a href="#work">Work</a>
+            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li>
-            <a
-              href="#about"
-              className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 "
-            >
-              About{" "}
-            </a>
+          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+            <a href="#about">About</a>
+            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
           </li>
-          <li>
-            <a
-              href="#contact"
-              className="cursor-pointer hover:scale-110 hover:opacity-75 duration-300 "
-            >
-              contact{" "}
-            </a>
+          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+            <a href="#contact">Contact</a>
+            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
           </li>
         </ul>
       </Slide>

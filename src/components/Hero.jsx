@@ -23,7 +23,7 @@ import "aos/dist/aos.css";
 
 const Hero = () => {
   useEffect(() => {
-    AOS.init({ duration: 1000 });
+    AOS.init({ duration: 2000 });
   }, []);
 
   return (
@@ -32,57 +32,59 @@ const Hero = () => {
         <Zoom in={true} timeout={1000}>
           {/* ============== //MY IMAGE ============== */}
           <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80  overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
-            <img src={bence} className="object-cover w-full h-full" />
-
+            <Zoom in={true} timeout={1000}>
+              <img src={bence} className="object-cover w-full h-full " />
+            </Zoom>
             <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-lg"></div>
           </div>
         </Zoom>
 
         {/* ============== //MAIN INRTODUCTION ============== */}
-        <div className="lg:flex lg:flex-col lg:justify-center">
+        <div className="md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center">
           <Slide in={true} timeout={1000}>
-            <p className="text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl">
-              <span className="text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl">
-                {" "}
-                Web{" "}
-                <ReactTyped
-                  strings={["Developer"]}
-                  typeSpeed={200}
-                  backSpeed={200}
-                  loop
-                />
-              </span>{" "}
-              based in Baguio City, Philippines.
-              <br />
-              Bachelor of Science in IT from the{" "}
-              <span className="text-[#FEC45D] font-semibold">
-                University of the Cordilleras
-              </span>
-              .
-              <br />
-              Passionate about creating{" "}
-              <span className="text-[#FEC45D] font-semibold">
-                dynamic and responsive websites
-              </span>
-              .
-              <br />
-              Seeking an{" "}
-              <span className="text-[#FEC45D] font-semibold">
-                entry-level role
-              </span>{" "}
-              to work on{" "}
-              <span className="text-[#FEC45D]  font-semibold">
-                meaningful projects
-              </span>
-              .
-            </p>
+            <div className="">
+              <p className="text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl">
+                <span className="text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl">
+                  {" "}
+                  Web{" "}
+                  <ReactTyped
+                    strings={["Developer"]}
+                    typeSpeed={200}
+                    backSpeed={200}
+                    loop
+                  />
+                </span>{" "}
+                based in Baguio City, Philippines.
+                <br />
+                Bachelor of Science in IT from the{" "}
+                <span className="text-[#FEC45D] font-semibold ">
+                  University of the Cordilleras.
+                </span>
+                <br />
+                Passionate about creating{" "}
+                <span className="text-[#FEC45D] font-semibold">
+                  dynamic and responsive websites.
+                </span>
+                <br />
+                Seeking an{" "}
+                <span className="text-[#FEC45D] font-semibold">
+                  entry-level role
+                </span>{" "}
+                to work on{" "}
+                <span className="text-[#FEC45D]  font-semibold">
+                  meaningful projects.
+                </span>
+              </p>
+            </div>
           </Slide>
-          <a
-            href="/RESUME - Micklay_Vince.pdf"
-            className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
-          >
-            CHECK MY RESUME <MdArrowOutward className="ml-1" />
-          </a>
+          <div className="w-full sm:flex sm:justify-start justify-start md:flex md:justify-start ">
+            <a
+              href="/RESUME - Micklay_Vince.pdf"
+              className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+            >
+              CHECK MY RESUME <MdArrowOutward className="ml-1" />
+            </a>
+          </div>
         </div>
       </div>
 
@@ -99,7 +101,7 @@ const Hero = () => {
           </section>
         </Slide>
       </div>
-      <Slide in={true} direction="up" timeout={1000}>
+      <Slide in={true} direction="up" timeout={2000}>
         <div
           data-aos="slide-up"
           className="border-b-2 border-[#FEC45D] w-full my-8"
@@ -251,7 +253,7 @@ const Hero = () => {
       </div>
       <a
         href="/RESUME - Micklay_Vince.pdf"
-        className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[14px]"
+        className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
       >
         CHECK MY RESUME <MdArrowOutward className="ml-1" />
       </a>

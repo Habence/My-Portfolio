@@ -6,7 +6,7 @@ import { FaFacebookSquare } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
-import { FaArrowRight } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 import Slide from "@mui/material/Slide";
 import AOS from "aos";
 import "aos/dist/aos.css";
@@ -36,8 +36,8 @@ const Contact = () => {
       </Slide>
 
       <div className="flex items-center font-poppins font-normal text-md text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300">
-        <p>Send an Email</p>
-        <FaArrowRight className="ml-2" />
+        <p className="cursor-pointer">Send an Email</p>
+        <MdArrowOutward className="ml-2" />
       </div>
 
       <div
@@ -79,7 +79,7 @@ const Contact = () => {
       </div>
       <div data-aos="fade-up" className="flex flex-col text-center w-full">
         <Slide in={true} direction="up" timeout={1000}>
-          <div className="flex mt-8  gap-12 w-full px-6 sm:flex sm:justify-center">
+          <div className="flex my-8  gap-12 w-full px-6 sm:flex sm:justify-center">
             <FaFacebookSquare size={30} color="#FEC45D" />
             <FaInstagram size={30} color="#FEC45D" />
             <FaTelegram size={30} color="#FEC45D" />
