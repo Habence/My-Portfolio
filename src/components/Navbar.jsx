@@ -1,14 +1,29 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import { HiMenuAlt3 } from "react-icons/hi";
 import { IoIosClose } from "react-icons/io";
-import { FaFacebookSquare } from "react-icons/fa";
-import { FaInstagram } from "react-icons/fa";
-import { FaTelegram } from "react-icons/fa";
-import { FaLinkedin } from "react-icons/fa";
+import {
+  FaFacebookSquare,
+  FaInstagram,
+  FaTelegram,
+  FaLinkedin,
+} from "react-icons/fa";
 import Slide from "@mui/material/Slide";
 
 const Navbar = () => {
   const [nav, setNav] = useState(false);
+
+  //When nav is true (menu is open), it adds the overflow-hidden
+  //class to the <body> element, preventing scrolling.
+  useEffect(() => {
+    if (nav) {
+      document.body.classList.add("overflow-hidden");
+
+      //When nav is false (menu is closed), it removes the overflow-hidden
+      //class from the <body> element, allowing scrolling.
+    } else {
+      document.body.classList.remove("overflow-hidden");
+    }
+  }, [nav]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -60,9 +75,9 @@ const Navbar = () => {
       </Slide>
 
       {nav && (
-        <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40 md:hidden">
-          <Slide in={true} direction="right" timeout={1000}>
-            <div className="absolute top-[9rem] left-2  transform -translate-y-52">
+        <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40 md:hidden ">
+          <Slide in={true} direction="down" timeout={1000}>
+            <div className="absolute top-[9rem] left-2 ">
               <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
                 <span className="text-yellow-400"> MENU</span>
               </p>

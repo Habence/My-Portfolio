@@ -1,6 +1,7 @@
 import React, { useEffect } from "react";
 import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
+import { MdArrowOutward } from "react-icons/md";
 import bence from "../../public/bence.png";
 import film from "../../public/film.png";
 import finance from "../../public/finance.png";
@@ -29,6 +30,7 @@ const Hero = () => {
     <div className="flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56">
       <div className=" w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse">
         <Zoom in={true} timeout={1000}>
+          {/* ============== //MY IMAGE ============== */}
           <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80  overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <img src={bence} className="object-cover w-full h-full" />
 
@@ -36,6 +38,7 @@ const Hero = () => {
           </div>
         </Zoom>
 
+        {/* ============== //MAIN INRTODUCTION ============== */}
         <div className="lg:flex lg:flex-col lg:justify-center">
           <Slide in={true} timeout={1000}>
             <p className="text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl">
@@ -78,11 +81,12 @@ const Hero = () => {
             href="/RESUME - Micklay_Vince.pdf"
             className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
           >
-            CHECK MY RESUME <FaArrowRight className="ml-1" />
+            CHECK MY RESUME <MdArrowOutward className="ml-1" />
           </a>
         </div>
       </div>
 
+      {/* ============== //SELECTED WORKS SECTION ============== */}
       <div className="mt-10">
         <Slide in={true} timeout={1000}>
           <section id="work">
@@ -194,6 +198,8 @@ const Hero = () => {
           </div>
         </div>
       </div>
+
+      {/* ============== //ABOUT ME SECTION ============== */}
       <div className="mt-10 2xl:mt-28">
         <Slide in={true} timeout={1000}>
           <section id="about">
@@ -247,8 +253,10 @@ const Hero = () => {
         href="/RESUME - Micklay_Vince.pdf"
         className="flex items-center font-poppins font-normal text-xs text-yellow-200 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[14px]"
       >
-        CHECK MY RESUME <FaArrowRight className="ml-1" />
+        CHECK MY RESUME <MdArrowOutward className="ml-1" />
       </a>
+
+      {/* ============== //SKILLS SECTION ============== */}
       <div data-aos="fade-right" className="mt-10 2xl:mt-28 ">
         <Slide in={true} timeout={1000}>
           <p className="text-white font-semibold text-4xl xl:text-6xl">
