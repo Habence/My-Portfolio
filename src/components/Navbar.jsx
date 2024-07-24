@@ -90,7 +90,7 @@ const Navbar = () => {
                 <Slide in={true} direction="left" timeout={1000}>
                   <li>
                     <a
-                      href="#about"
+                      href="#skill"
                       className="cursor-pointer"
                       onClick={handleNav}
                     >
@@ -123,7 +123,7 @@ const Navbar = () => {
               </ul>
             </Slide>
           </div>
-          <div className="mt-[20rem] flex flex-col gap-4 items-center">
+          <div className="mt-[28rem] flex flex-col gap-4">
             <Slide in={true} direction="right" timeout={1000}>
               <p className="font-bold">micklayvince@gmail.com</p>
             </Slide>
