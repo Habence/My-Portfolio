@@ -49,6 +49,10 @@ const Navbar = () => {
             <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
           </li>
           <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+            <a href="#skill">Skills</a>
+            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
+          </li>
+          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
             <a href="#about">About</a>
             <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
           </li>
@@ -90,11 +94,22 @@ const Navbar = () => {
                       className="cursor-pointer"
                       onClick={handleNav}
                     >
+                      SKILL
+                    </a>
+                  </li>
+                </Slide>
+                <Slide in={true} direction="right" timeout={1000}>
+                  <li>
+                    <a
+                      href="#about"
+                      className="cursor-pointer"
+                      onClick={handleNav}
+                    >
                       ABOUT
                     </a>
                   </li>
                 </Slide>
-                <Slide in={true} direction="up" timeout={1000}>
+                <Slide in={true} direction="left" timeout={1000}>
                   <li>
                     <a
                       href="#contact"
@@ -108,7 +123,7 @@ const Navbar = () => {
               </ul>
             </Slide>
           </div>
-          <div className="mt-56 flex flex-col gap-4">
+          <div className="mt-[20rem] flex flex-col gap-4 items-center">
             <Slide in={true} direction="right" timeout={1000}>
               <p className="font-bold">micklayvince@gmail.com</p>
             </Slide>

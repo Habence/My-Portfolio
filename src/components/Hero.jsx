@@ -31,7 +31,7 @@ const Hero = () => {
       <div className=" w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse">
         <Zoom in={true} timeout={1000}>
           {/* ============== //MY IMAGE ============== */}
-          <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80  overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
+          <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <Zoom in={true} timeout={1000}>
               <img src={bence} className="object-cover w-full h-full " />
             </Zoom>
@@ -226,16 +226,16 @@ const Hero = () => {
       >
         <Zoom in={true} timeout={1000}>
           <p className="">
-            I am Vince Micklay, a Web Developer based in Baguio City,
-            Philippines, holding a Bachelor of Science in Information Technology
-            (BSIT) from the University of the Cordilleras. I specialize in
-            creating dynamic and responsive websites using JavaScript, HTML,
-            CSS, and ReactJS. My experience includes developing mobile apps with
-            Java and Android Studio, and I have successfully implemented a QR
-            code transaction process for a recycling app. I interned as a Junior
-            Backend Developer at BitShares Labs Inc., where I enhanced
-            interactions within the Cryptosavers Club through a Discord chatbot
-            utilizing neural networks.
+            As a seasoned Web Developer based in Baguio City, Philippines, I
+            hold a Bachelor of Science in Information Technology (BSIT) from the
+            University of the Cordilleras. I specialize in crafting dynamic and
+            responsive websites using JavaScript, HTML, CSS, and ReactJS. My
+            expertise extends to mobile app development with Java and Android
+            Studio, where I collaboratively implemented a QR code transaction
+            system for a recycling app as part of our capstone project.
+            Additionally, my internship as a Junior Backend Developer at
+            BitShares Labs Inc. honed my skills in enhancing user interactions
+            through a Discord chatbot powered by neural networks.
           </p>
         </Zoom>
         <br />
@@ -261,9 +261,11 @@ const Hero = () => {
       {/* ============== //SKILLS SECTION ============== */}
       <div data-aos="fade-right" className="mt-10 2xl:mt-28 ">
         <Slide in={true} timeout={1000}>
-          <p className="text-white font-semibold text-4xl xl:text-6xl">
-            Skills & <span className="text-[#FEC45D]"> Knowledge</span>
-          </p>
+          <section id="skill">
+            <p className="text-white font-semibold text-4xl xl:text-6xl">
+              Skills & <span className="text-[#FEC45D]"> Knowledge</span>
+            </p>
+          </section>
         </Slide>
       </div>
       <Slide in={true} direction="up" timeout={1000}>
@@ -277,13 +279,16 @@ const Hero = () => {
         className="flex flex-wrap flex-row gap-4 mt-10 justify-between"
       >
         <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className="flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className="flex justify-center">
               <Zoom in={true} timeout={1000}>
-                <img src={html} alt="" className="h-10 xl:h-[6rem]" />
+                <img src={html} alt="hml" className="h-10 xl:h-[6rem]" />
               </Zoom>
               <Zoom in={true}>
-                <img src={css} alt="" className="h-10 xl:h-[6rem]" />
+                <img src={css} alt="css" className="h-10 xl:h-[6rem]" />
               </Zoom>
             </div>
             <Slide in={true} timeout={1000}>
@@ -295,8 +300,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={js} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
@@ -310,8 +318,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={react} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
@@ -325,8 +336,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={firebase} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
@@ -340,8 +354,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={mysql} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
@@ -355,8 +372,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={php} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
@@ -370,8 +390,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={git} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
@@ -385,8 +408,11 @@ const Hero = () => {
         </div>
 
         <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
-          <div className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4">
-            <div className=" flex justify-center">
+          <div
+            data-aos="fade-left"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
               <Zoom in={true} timeout={1000}>
                 <img src={vscode} alt="" className="h-10 xl:h-[6rem]" />
               </Zoom>
