@@ -19,15 +19,17 @@ const Navbar = ({ lightMode, setLightMode }) => {
     setNav(!nav);
   };
 
-  // When nav is true (menu is open), it adds the overflow-hidden
-  // class to the <body> element, preventing scrolling.
-  if (nav) {
-    document.body.style.overflowY = "hidden";
-  } else {
-    // When nav is false (menu is not open), it adds the overflow-scroll
-    // class to the <body> element, letting it to scroll again.
-    document.body.style.overflowY = "scroll";
-  }
+  useEffect(() => {
+    if (nav) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+
+    return () => {
+      document.body.style.overflow = "auto";
+    };
+  }, [nav]);
 
   useEffect(() => {
     // Function to handle scroll events
