@@ -128,9 +128,8 @@ const Hero = ({ lightMode }) => {
               </p>
             </div>
           </Slide>
-          <div className="w-full sm:flex sm:justify-start justify-start md:flex md:justify-start ">
+          <div className="w-full go sm:flex sm:justify-start justify-start md:flex md:justify-start ">
             <a
-              data-aos="fade-right"
               href="/RESUME - Micklay_Vince.pdf"
               className={
                 lightMode
@@ -370,7 +369,6 @@ const Hero = ({ lightMode }) => {
         </Zoom>
       </div>
       <a
-        data-aos="fade-right"
         href="/RESUME - Micklay_Vince.pdf"
         className={
           lightMode
