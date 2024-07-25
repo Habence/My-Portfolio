@@ -69,6 +69,7 @@ const Contact = ({ lightMode, setLightMode }) => {
       </Slide>
 
       <div
+        data-aos="fade-right"
         className={
           lightMode
             ? "flex items-center font-poppins font-normal text-md text-teal-600 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300"
@@ -79,11 +80,9 @@ const Contact = ({ lightMode, setLightMode }) => {
         <MdArrowOutward className="ml-2" />
       </div>
 
-      <div
-        data-aos="fade-up"
-        className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center "
-      >
+      <div className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center ">
         <div
+          data-aos="flip-up"
           className={
             lightMode
               ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
@@ -114,6 +113,7 @@ const Contact = ({ lightMode, setLightMode }) => {
         </div>
 
         <div
+          data-aos="flip-up"
           className={
             lightMode
               ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
@@ -144,6 +144,7 @@ const Contact = ({ lightMode, setLightMode }) => {
         </div>
 
         <div
+          data-aos="flip-up"
           onClick={handleClick}
           className={
             lightMode
@@ -186,7 +187,7 @@ const Contact = ({ lightMode, setLightMode }) => {
           </Slide>
         </div>
       </div>
-      <div data-aos="fade-up" className="flex flex-col text-center w-full">
+      <div data-aos="flip-up" className="flex flex-col text-center w-full">
         <Slide in={true} direction="up" timeout={1000}>
           <div className="flex my-8  gap-12 w-full px-6 sm:flex sm:justify-center">
             <FaFacebookSquare
@@ -233,7 +234,7 @@ const Contact = ({ lightMode, setLightMode }) => {
           }
         ></div>
       </Slide>
-      <div data-aos="fade-up" className="flex justify-center w-full py-10">
+      <div data-aos="flip-up" className="flex justify-center w-full py-10">
         <Slide in={true} direction="up" timeout={1000}>
           <p
             className={

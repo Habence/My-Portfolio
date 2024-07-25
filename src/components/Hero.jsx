@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
@@ -31,11 +31,14 @@ const Hero = ({ lightMode }) => {
     <div
       className={
         lightMode
-          ? "bg-white flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56"
-          : "flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56"
+          ? "bg-white flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-12 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
+          : "flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-12 xs:pt-[10rem] sm:pt-[10rem] sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
       }
     >
-      <div className=" w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse">
+      <div
+        data-aos="flip-up"
+        className="w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse"
+      >
         <Zoom in={true} timeout={1000}>
           {/* ============== //MY IMAGE ============== */}
           <div className="relative hover:animate-pulse mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
@@ -45,13 +48,6 @@ const Hero = ({ lightMode }) => {
                 className="object-cover w-full h-full "
               />
             </Zoom>
-            <div
-              className={
-                lightMode
-                  ? ""
-                  : "absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-lg"
-              }
-            ></div>
           </div>
         </Zoom>
 
@@ -60,6 +56,7 @@ const Hero = ({ lightMode }) => {
           <Slide in={true} timeout={1000}>
             <div className="xs:mt-10 sm:mt-10">
               <p
+                data-aos="flip-left"
                 className={
                   lightMode
                     ? "text-black font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl"
@@ -132,6 +129,7 @@ const Hero = ({ lightMode }) => {
           </Slide>
           <div className="w-full sm:flex sm:justify-start justify-start md:flex md:justify-start ">
             <a
+              data-aos="fade-right"
               href="/RESUME - Micklay_Vince.pdf"
               className={
                 lightMode
@@ -184,12 +182,12 @@ const Hero = ({ lightMode }) => {
         }
       >
         <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
-          <div data-aos="fade-down">
+          <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
                 src={film}
                 alt="film"
-                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+                className="cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="right" timeout={1000}>
@@ -211,12 +209,12 @@ const Hero = ({ lightMode }) => {
         </div>
 
         <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
-          <div data-aos="fade-down">
+          <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
                 src={finance}
                 alt="finance"
-                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+                className="cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="left" timeout={1000}>
@@ -237,13 +235,16 @@ const Hero = ({ lightMode }) => {
           </div>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
-          <div data-aos="fade-down">
+        <div
+          data-aos="flip-up"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
+          <div>
             <Zoom in={true} timeout={1000}>
               <img
                 src={perfume}
                 alt="perfume"
-                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+                className="cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="right" timeout={1000}>
@@ -264,13 +265,16 @@ const Hero = ({ lightMode }) => {
           </div>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
-          <div data-aos="fade-down">
+        <div
+          data-aos="flip-up"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
+          <div>
             <Zoom in={true} timeout={1000}>
               <img
                 src={notes}
                 alt="notes"
-                className="rounded-xl cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
+                className="cursor-default h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="left" timeout={1000}>
@@ -359,6 +363,7 @@ const Hero = ({ lightMode }) => {
         </Zoom>
       </div>
       <a
+        data-aos="fade-right"
         href="/RESUME - Micklay_Vince.pdf"
         className={
           lightMode
