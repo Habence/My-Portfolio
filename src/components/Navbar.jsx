@@ -63,7 +63,10 @@ const Navbar = ({ lightMode, setLighMode }) => {
       <Slide in={true} direction="left" timeout={1000}>
         <div onClick={handleNav} className="cursor-pointer z-50 md:hidden">
           {nav ? (
-            <IoIosClose size={30} color="white" />
+            <IoIosClose
+              size={30}
+              className={lightMode ? "text-black" : "text-white"}
+            />
           ) : (
             <HiMenuAlt3
               size={32}
@@ -148,11 +151,22 @@ const Navbar = ({ lightMode, setLighMode }) => {
       </Slide>
 
       {nav && (
-        <div className="fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40 md:hidden ">
+        <div
+          className={
+            lightMode
+              ? "fixed inset-0 bg-white text-black flex flex-col items-center justify-center z-40 md:hidden "
+              : "fixed inset-0 bg-black text-white flex flex-col items-center justify-center z-40 md:hidden "
+          }
+        >
           <Slide in={true} direction="down" timeout={1000}>
             <div className="absolute top-[9rem] left-2 ">
               <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
-                <span className="text-yellow-400"> MENU</span>
+                <span
+                  className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}
+                >
+                  {" "}
+                  MENU
+                </span>
               </p>
             </div>
           </Slide>
