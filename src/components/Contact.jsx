@@ -33,7 +33,7 @@ const Contact = ({ lightMode, setLightMode }) => {
     <div
       className={
         lightMode
-          ? "flex flex-col px-10 pb-10 items-start cursor-default  xs:px-12 md:px-20 sm:px- bg-gray-100 lg:px-28 xl:px-40 2xl:px-56"
+          ? "flex flex-col px-10 pb-10 items-start cursor-default  xs:px-12 md:px-20 sm:px- bg-slate-300 lg:px-28 xl:px-40 2xl:px-56"
           : "flex flex-col px-10 pb-10 items-start cursor-default  xs:px-12 md:px-20 sm:px- bg-[#31333b] lg:px-28 xl:px-40 2xl:px-56"
       }
     >

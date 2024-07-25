@@ -32,7 +32,7 @@ const Hero = ({ lightMode }) => {
       id="home"
       className={
         lightMode
-          ? "bg-white flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-12 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
+          ? "bg-slate-100 flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-12 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
           : "flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-12 xs:pt-[10rem] sm:pt-[10rem] sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
       }
     >

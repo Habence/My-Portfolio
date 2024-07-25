@@ -48,7 +48,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
     <div
       className={`fixed w-full transition-transform duration-300 z-50 ${
         visible ? "translate-y-0" : "-translate-y-full"
-      } ${lightMode ? "bg-white pt-5" : "bg-[#171717] pt-5"} ${
+      } ${lightMode ? "bg-slate-100 pt-5" : "bg-[#171717] pt-5"} ${
         lightMode ? "text-black" : "text-white"
       }`}
     >
@@ -179,7 +179,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
           <div
             className={
               lightMode
-                ? "fixed inset-0 bg-white h-[100vh] text-black flex flex-col items-center justify-center z-40 md:hidden"
+                ? "fixed inset-0 bg-slate-100 h-[100vh] text-black flex flex-col items-center justify-center z-40 md:hidden"
                 : "fixed inset-0 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 md:hidden"
             }
           >
