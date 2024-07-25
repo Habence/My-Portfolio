@@ -24,6 +24,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
   if (nav) {
     document.body.style.overflowY = "hidden";
   } else {
+    // When nav is false (menu is not open), it adds the overflow-scroll
+    // class to the <body> element, letting it to scroll again.
     document.body.style.overflowY = "scroll";
   }
 
@@ -59,7 +61,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
       >
         <Slide in={true} direction="right" timeout={1000}>
           <div className="flex gap-2">
-            <p
+            <a
+              href="#home"
               className={
                 lightMode
                   ? "text-black font-poppins font-semibold text-xl"
@@ -70,7 +73,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 Vince
               </span>{" "}
               Micklay
-            </p>
+            </a>
             <LuSun
               size={30}
               className={

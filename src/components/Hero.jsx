@@ -29,6 +29,7 @@ const Hero = ({ lightMode }) => {
 
   return (
     <div
+      id="home"
       className={
         lightMode
           ? "bg-white flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-12 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
@@ -181,8 +182,11 @@ const Hero = ({ lightMode }) => {
             : "flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-col md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2"
         }
       >
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
-          <div data-aos="flip-up">
+        <div
+          data-aos="flip-up"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
+          <div>
             <Zoom in={true} timeout={1000}>
               <img
                 src={film}
@@ -208,8 +212,11 @@ const Hero = ({ lightMode }) => {
           </div>
         </div>
 
-        <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
-          <div data-aos="flip-up">
+        <div
+          data-aos="flip-up"
+          className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+        >
+          <div>
             <Zoom in={true} timeout={1000}>
               <img
                 src={finance}
