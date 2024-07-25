@@ -9,6 +9,7 @@ const App = () => {
   useSmoothScroll();
 
   const [loading, setLoading] = useState(true);
+  const [lightMode, setLighMode] = useState(false);
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -23,9 +24,9 @@ const App = () => {
       {loading && <PreLoader />}
       {!loading && (
         <div>
-          <Navbar />
-          <Hero />
-          <Contact />
+          <Navbar lightMode={lightMode} setLighMode={setLighMode} />
+          <Hero lightMode={lightMode} setLighMode={setLighMode} />
+          <Contact lightMode={lightMode} setLighMode={setLighMode} />
         </div>
       )}
     </>

@@ -3,6 +3,7 @@ import { ReactTyped } from "react-typed";
 import { FaArrowRight } from "react-icons/fa";
 import { MdArrowOutward } from "react-icons/md";
 import bence from "../../public/bence.png";
+import bence_colored from "../../public/bence_colored.png";
 import film from "../../public/film.png";
 import finance from "../../public/finance.png";
 import perfume from "../../public/perfume.png";
@@ -21,21 +22,36 @@ import Slide from "@mui/material/Slide";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-const Hero = () => {
+const Hero = ({ lightMode }) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
 
   return (
-    <div className="flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56">
+    <div
+      className={
+        lightMode
+          ? "bg-white flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56"
+          : "flex flex-col px-10 py-10 items-start cursor-default xs:px-12 md:px-20 sm:px-24 lg:px-28 xl:px-40 2xl:px-56"
+      }
+    >
       <div className=" w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse">
         <Zoom in={true} timeout={1000}>
           {/* ============== //MY IMAGE ============== */}
-          <div className="relative hover:animate-pulse  mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
+          <div className="relative hover:animate-pulse mx-auto bg-gradient-to-b object-contain rounded-full w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <Zoom in={true} timeout={1000}>
-              <img src={bence} className="object-cover w-full h-full " />
+              <img
+                src={bence_colored}
+                className="object-cover w-full h-full "
+              />
             </Zoom>
-            <div className="absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-lg"></div>
+            <div
+              className={
+                lightMode
+                  ? ""
+                  : "absolute inset-0 bg-gradient-to-b from-transparent to-black opacity-80 rounded-lg"
+              }
+            ></div>
           </div>
         </Zoom>
 
@@ -43,12 +59,24 @@ const Hero = () => {
         <div className=" md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center">
           <Slide in={true} timeout={1000}>
             <div className="xs:mt-10 sm:mt-10">
-              <p className="text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl">
+              <p
+                className={
+                  lightMode
+                    ? "text-black font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl"
+                    : "text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl"
+                }
+              >
                 <div>
-                  <span className="text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl">
-                    {" "}
+                  <span
+                    className={
+                      lightMode
+                        ? "text-teal-600 font-semibold text-2xl uppercase 2xl:text-3xl"
+                        : "text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl"
+                    }
+                  >
+                    front-end{" "}
                     <ReactTyped
-                      strings={[" Web Developer"]}
+                      strings={["Developer"]}
                       typeSpeed={40}
                       backSpeed={40}
                       loop
@@ -58,21 +86,45 @@ const Hero = () => {
                 based in Baguio City, Philippines.
                 <br />
                 Bachelor of Science in IT from the{" "}
-                <span className="text-[#FEC45D] font-semibold ">
+                <span
+                  className={
+                    lightMode
+                      ? "text-teal-600 font-semibold "
+                      : "text-[#FEC45D] font-semibold "
+                  }
+                >
                   University of the Cordilleras.
                 </span>
                 <br />
                 Passionate about creating{" "}
-                <span className="text-[#FEC45D] font-semibold">
+                <span
+                  className={
+                    lightMode
+                      ? "text-teal-600 font-semibold "
+                      : "text-[#FEC45D] font-semibold "
+                  }
+                >
                   dynamic and responsive websites.
                 </span>
                 <br />
                 Seeking an{" "}
-                <span className="text-[#FEC45D] font-semibold">
+                <span
+                  className={
+                    lightMode
+                      ? "text-teal-600 font-semibold "
+                      : "text-[#FEC45D] font-semibold "
+                  }
+                >
                   entry-level role
                 </span>{" "}
                 to work on{" "}
-                <span className="text-[#FEC45D]  font-semibold">
+                <span
+                  className={
+                    lightMode
+                      ? "text-teal-600 font-semibold "
+                      : "text-[#FEC45D] font-semibold "
+                  }
+                >
                   meaningful projects.
                 </span>
               </p>
@@ -81,7 +133,11 @@ const Hero = () => {
           <div className="w-full sm:flex sm:justify-start justify-start md:flex md:justify-start ">
             <a
               href="/RESUME - Micklay_Vince.pdf"
-              className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+              className={
+                lightMode
+                  ? "flex items-center font-poppins font-normal text-xs text-teal-600 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+                  : "flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+              }
             >
               CHECK MY RESUME <MdArrowOutward className="ml-1" />
             </a>
@@ -95,9 +151,17 @@ const Hero = () => {
           <section id="work">
             <p
               data-aos="fade-right"
-              className="text-white font-semibold text-4xl xl:text-6xl"
+              className={
+                lightMode
+                  ? "text-black font-semibold text-4xl xl:text-6xl"
+                  : "text-white font-semibold text-4xl xl:text-6xl"
+              }
             >
-              Selected <span className="text-[#FEC45D]"> Works</span>
+              Selected{" "}
+              <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
+                {" "}
+                Works
+              </span>
             </p>
           </section>
         </Slide>
@@ -105,10 +169,20 @@ const Hero = () => {
       <Slide in={true} direction="up" timeout={2000}>
         <div
           data-aos="slide-up"
-          className="border-b-2 border-[#FEC45D] w-full my-8"
+          className={
+            lightMode
+              ? "border-b-2 border-teal-600 w-full my-8"
+              : "border-b-2 border-[#FEC45D] w-full my-8"
+          }
         ></div>
       </Slide>
-      <div className="flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-col md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2">
+      <div
+        className={
+          lightMode
+            ? "flex flex-col mt-10 items-center gap-8 text-black font-poppins font-normal md:flex md:flex-col md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2"
+            : "flex flex-col mt-10 items-center gap-8 text-white font-poppins font-normal md:flex md:flex-col md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2"
+        }
+      >
         <div className="w-full shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
           <div data-aos="fade-down">
             <Zoom in={true} timeout={1000}>
@@ -125,7 +199,11 @@ const Hero = () => {
               href="https://film-project-indol.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              className={
+                lightMode
+                  ? "ml-2 text-teal-600 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+                  : "ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              }
             >
               View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
             </a>
@@ -148,7 +226,11 @@ const Hero = () => {
               href="https://finance-project-pink.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              className={
+                lightMode
+                  ? "ml-2 text-teal-600 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+                  : "ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              }
             >
               View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
             </a>
@@ -171,7 +253,11 @@ const Hero = () => {
               href="https://perfume-rho.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              className={
+                lightMode
+                  ? "ml-2 text-teal-600 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+                  : "ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              }
             >
               View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
             </a>
@@ -194,7 +280,11 @@ const Hero = () => {
               href="https://keepernotesbence.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
-              className="ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              className={
+                lightMode
+                  ? "ml-2 text-teal-600 font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+                  : "ml-2 text-[#FEC45D] font-poppins flex font-normal text-xs uppercase hover:scale-x-105 duration-300 cursor-pointer 2xl:text-base"
+              }
             >
               View Website <FaArrowRight className="ml-1 mt-[0.10rem] " />
             </a>
@@ -208,9 +298,17 @@ const Hero = () => {
           <section id="about">
             <p
               data-aos="fade-right"
-              className="text-white font-semibold text-4xl xl:text-6xl"
+              className={
+                lightMode
+                  ? "text-black font-semibold text-4xl xl:text-6xl"
+                  : "text-white font-semibold text-4xl xl:text-6xl"
+              }
             >
-              About <span className="text-[#FEC45D]"> Me</span>
+              About{" "}
+              <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
+                {" "}
+                Me
+              </span>
             </p>
           </section>
         </Slide>
@@ -218,12 +316,20 @@ const Hero = () => {
       <Slide in={true} direction="up" timeout={1000}>
         <div
           data-aos="fade-up"
-          className="border-b-2 border-[#FEC45D] w-full my-8"
+          className={
+            lightMode
+              ? "border-b-2 border-teal-600 w-full my-8"
+              : "border-b-2 border-[#FEC45D] w-full my-8"
+          }
         ></div>
       </Slide>
       <div
         data-aos="fade-right"
-        className="mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-[20rem] 2xl:text-lg"
+        className={
+          lightMode
+            ? "mt-10 text-black font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-[20rem] 2xl:text-lg"
+            : "mt-10 text-white font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-[20rem] 2xl:text-lg"
+        }
       >
         <Zoom in={true} timeout={1000}>
           <p className="">
@@ -254,7 +360,11 @@ const Hero = () => {
       </div>
       <a
         href="/RESUME - Micklay_Vince.pdf"
-        className="flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+        className={
+          lightMode
+            ? "flex items-center font-poppins font-normal text-xs text-teal-600 leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+            : "flex items-center font-poppins font-normal text-xs text-[#FEC45D] leading-[4rem] hover:opacity-70 hover:scale-110 duration-300 2xl:text-[16px] 2xl:mt-4"
+        }
       >
         CHECK MY RESUME <MdArrowOutward className="ml-1" />
       </a>
@@ -263,8 +373,18 @@ const Hero = () => {
       <div data-aos="fade-right" className="mt-10 2xl:mt-28 ">
         <Slide in={true} timeout={1000}>
           <section id="skill">
-            <p className="text-white font-semibold text-4xl xl:text-6xl">
-              Skills & <span className="text-[#FEC45D]"> Knowledge</span>
+            <p
+              className={
+                lightMode
+                  ? "text-black font-semibold text-4xl xl:text-6xl"
+                  : "text-white font-semibold text-4xl xl:text-6xl"
+              }
+            >
+              Skills &{" "}
+              <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
+                {" "}
+                Knowledge
+              </span>
             </p>
           </section>
         </Slide>
@@ -272,14 +392,24 @@ const Hero = () => {
       <Slide in={true} direction="up" timeout={1000}>
         <div
           data-aos="fade-up"
-          className="border-b-2 border-[#FEC45D] w-full my-8"
+          className={
+            lightMode
+              ? "border-b-2 border-teal-600 w-full my-8"
+              : "border-b-2 border-[#FEC45D] w-full my-8"
+          }
         ></div>
       </Slide>
       <div
         data-aos="fade-down"
         className="flex flex-wrap flex-row gap-4 mt-10 justify-between"
       >
-        <div className="flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -300,7 +430,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -318,7 +454,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -336,7 +478,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -354,7 +502,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -372,7 +526,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -390,7 +550,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
@@ -408,7 +574,13 @@ const Hero = () => {
           </div>
         </div>
 
-        <div className="flex flex-col items-center gap-8 text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300">
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl bg-gray-700 rounded-xl hover:scale-105 hover:bg-[#FEC45D] duration-300"
+          }
+        >
           <div
             data-aos="fade-right"
             className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"

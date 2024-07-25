@@ -7,9 +7,10 @@ import {
   FaTelegram,
   FaLinkedin,
 } from "react-icons/fa";
+import { LuSun } from "react-icons/lu";
 import Slide from "@mui/material/Slide";
 
-const Navbar = () => {
+const Navbar = ({ lightMode, setLighMode }) => {
   const [nav, setNav] = useState(false);
 
   const handleNav = () => {
@@ -27,38 +28,121 @@ const Navbar = () => {
   }
 
   return (
-    <div className="flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56 ">
+    <div
+      className={
+        lightMode
+          ? "bg-white flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
+          : "flex flex-row px-10 py-10 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
+      }
+    >
       <Slide in={true} direction="right" timeout={1000}>
-        <p className="text-white font-poppins font-semibold text-xl">
-          <span className="text-[#FEC45D]">Vince</span> Micklay
-        </p>
+        <div className="flex gap-2">
+          <p
+            className={
+              lightMode
+                ? "text-black font-poppins font-semibold text-xl"
+                : "text-white font-poppins font-semibold text-xl"
+            }
+          >
+            <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
+              Vince
+            </span>{" "}
+            Micklay
+          </p>
+          <LuSun
+            size={30}
+            className={
+              lightMode
+                ? "mt-[0.10rem] cursor-pointer text-teal-600 hover:scale-110 duration-300"
+                : "mt-[0.10rem] cursor-pointer text-[#FEC45D] hover:scale-110 duration-300"
+            }
+            onClick={() => setLighMode(!lightMode)}
+          />
+        </div>
       </Slide>
       <Slide in={true} direction="left" timeout={1000}>
         <div onClick={handleNav} className="cursor-pointer z-50 md:hidden">
           {nav ? (
             <IoIosClose size={30} color="white" />
           ) : (
-            <HiMenuAlt3 size={32} color="white" />
+            <HiMenuAlt3
+              size={32}
+              className={lightMode ? "text-black" : "text-white"}
+            />
           )}
         </div>
       </Slide>
       <Slide in={true} direction="left" timeout={1000}>
-        <ul className="flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex">
-          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+        <ul
+          className={
+            lightMode
+              ? "flex flex-row gap-10 font-poppins font-semibold text-black hidden md:flex"
+              : "flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex"
+          }
+        >
+          <li
+            className={
+              lightMode
+                ? "relative group hover:scale-110 duration-300 hover:text-teal-600"
+                : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
+            }
+          >
             <a href="#work">Work</a>
-            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
+            <span
+              className={
+                lightMode
+                  ? "block mx-auto mt-1 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"
+                  : "block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"
+              }
+            ></span>
           </li>
-          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+          <li
+            className={
+              lightMode
+                ? "relative group hover:scale-110 duration-300 hover:text-teal-600"
+                : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
+            }
+          >
             <a href="#skill">Skills</a>
-            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
+            <span
+              className={
+                lightMode
+                  ? "block mx-auto mt-1 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"
+                  : "block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"
+              }
+            ></span>
           </li>
-          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+          <li
+            className={
+              lightMode
+                ? "relative group hover:scale-110 duration-300 hover:text-teal-600"
+                : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
+            }
+          >
             <a href="#about">About</a>
-            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
+            <span
+              className={
+                lightMode
+                  ? "block mx-auto mt-1 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"
+                  : "block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"
+              }
+            ></span>
           </li>
-          <li className="relative group hover:scale-110 duration-300 hover:text-[#FEC45D]">
+          <li
+            className={
+              lightMode
+                ? "relative group hover:scale-110 duration-300 hover:text-teal-600"
+                : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
+            }
+          >
             <a href="#contact">Contact</a>
-            <span className="block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"></span>
+            <span
+              className={
+                lightMode
+                  ? "block mx-auto mt-1 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"
+                  : "block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"
+              }
+            ></span>
           </li>
         </ul>
       </Slide>
