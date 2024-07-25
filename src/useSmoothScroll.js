@@ -4,7 +4,7 @@ import SmoothScroll from "smooth-scroll";
 const useSmoothScroll = () => {
   useEffect(() => {
     const scroll = new SmoothScroll('a[href*="#"]', {
-      speed: 2000,
+      speed: 1000,
       speedAsDuration: true,
     });
 
