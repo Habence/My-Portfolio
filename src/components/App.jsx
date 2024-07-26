@@ -11,7 +11,7 @@ const App = () => {
   const [lightMode, setLightMode] = useState(false);
 
   return (
-    <div className="min-h-screen flex flex-col">
+    <div className="md:bg-custom ">
       <Navbar lightMode={lightMode} setLightMode={setLightMode} />
       <LandingPage />
       <Hero lightMode={lightMode} setLightMode={setLightMode} />
