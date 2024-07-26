@@ -57,8 +57,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
       <div
         className={
           lightMode
-            ? "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56"
-            : "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-12 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56"
+            ? "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-5 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56"
+            : "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-5 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56"
         }
       >
         <Slide in={true} direction="right" timeout={1000}>
