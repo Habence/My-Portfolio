@@ -8,17 +8,11 @@ body {
   @apply bg-[#171717] bg-center bg-no-repeat;
   background-image: url(../public/space.jpg);
   background-size: cover;
-  background-attachment: fixed;
+  background-attachment: scroll; /* Change the attachment to scroll for better mobile compatibility */
 }
 
-@media (max-width: 768px) {
+@media (min-width: 768px) {
   body {
-    @apply bg-scroll;
-  }
-}
-
-@media (max-height: 500px) {
-  body {
-    background-size: contain;
+    background-attachment: fixed; /* Set attachment to fixed for larger screens */
   }
 }
