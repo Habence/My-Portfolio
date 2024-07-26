@@ -11,3 +11,11 @@ body {
   background-position: center;
   background-image: url(../public/space.jpg);
 }
+
+@media (max-width: 768px) {
+  body {
+    background-attachment: scroll;
+    background-size: cover;
+    background-attachment: fixed;
+  }
+}
