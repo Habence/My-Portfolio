@@ -11,7 +11,7 @@ const App = () => {
   const [lightMode, setLightMode] = useState(false);
 
   return (
-    <div className="md:bg-custom bg-custom-space bg-cover bg-fixed ">
+    <div className="min-h-screen bg-custom-space bg-cover bg-fixed bg-center bg-no-repeat">
       <Navbar lightMode={lightMode} setLightMode={setLightMode} />
       <LandingPage />
       <Hero lightMode={lightMode} setLightMode={setLightMode} />

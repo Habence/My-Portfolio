@@ -11,9 +11,3 @@ body {
   background-position: center;
   background-image: url(../public/space.jpg); */
 }
-
-@media (max-width: 640px) {
-  .bg-custom {
-    background-attachment: scroll !important; /* Change to scroll if fixed causes issues */
-  }
-}
