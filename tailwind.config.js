@@ -6,7 +6,6 @@ export default {
       screens: {
         xs: { max: "500px" }, // Custom breakpoint for screens below 500px
         max_sm: { max: "640px" }, // Custom breakpoint for screens below 500px
-        max_md: { max: "748px" },
       },
       backdropBlur: {
         xs: "2px",
@@ -22,7 +21,8 @@ export default {
       },
       backgroundImage: {
         space: "url('../public/space.jpg')",
-        lightSpace: "url('../public/horizontal.jpg')",
+        lightSpace: "url('../public/lightSpace.jpg')",
+        "custom-space": "url('../public/horizontal.jpg')",
         "custom-spacely": "url('../public/space.jpg')",
       },
       backgroundSize: {
@@ -39,7 +39,7 @@ export default {
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        ".custom_space": {
+        ".bg-custom": {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
@@ -57,19 +57,6 @@ export default {
           "background-attachment": "fixed",
           "background-position": "center",
           "background-image": "url('../public/bence_colored.png')",
-        },
-
-        ".bg-custom": {
-          "background-attachment": "fixed",
-          "background-position": "center",
-          "background-size": "cover",
-          "background-repeat": "no-repeat",
-          "background-image": "url('../public/horizontal.jpg')",
-        },
-        "@screen max_sm": {
-          ".bg-custom": {
-            "background-attachment": "scroll", // To avoid issues on small devices
-          },
         },
       });
     },
