@@ -12,6 +12,7 @@ const App = () => {
   return (
     <div>
       <Navbar lightMode={lightMode} setLightMode={setLightMode} />
+      <LandingPage />
       <Hero lightMode={lightMode} setLightMode={setLightMode} />
       <Contact lightMode={lightMode} setLightMode={setLightMode} />
     </div>

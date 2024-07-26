@@ -34,7 +34,7 @@ const Contact = ({ lightMode, setLightMode }) => {
       className={
         lightMode
           ? "flex flex-col px-10 pb-10 items-start cursor-default  xs:px-12 md:px-20 sm:px- bg-slate-300 lg:px-28 xl:px-40 2xl:px-56"
-          : "flex flex-col px-10 pb-10 items-start cursor-default  xs:px-12 md:px-20 sm:px- bg-[#31333b] lg:px-28 xl:px-40 2xl:px-56"
+          : "flex bg-opacity-55 flex-col px-10 pb-10 items-start cursor-default  xs:px-12 md:px-20 sm:px- bg-[#31333b] lg:px-28 xl:px-40 2xl:px-56"
       }
     >
       {/* ============== //CONTACT SECTION ============== */}
@@ -80,13 +80,15 @@ const Contact = ({ lightMode, setLightMode }) => {
         <MdArrowOutward className="ml-2" />
       </div>
 
-      <div className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center ">
+      <div
+        data-aos="flip-up"
+        className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center  "
+      >
         <div
-          data-aos="flip-up"
           className={
             lightMode
               ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
-              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300"
+              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 hover:opacity-70 duration-300"
           }
         >
           <MdEmail
@@ -113,11 +115,10 @@ const Contact = ({ lightMode, setLightMode }) => {
         </div>
 
         <div
-          data-aos="flip-up"
           className={
             lightMode
               ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
-              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300"
+              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 hover:opacity-70 duration-300"
           }
         >
           <FaPhoneAlt
@@ -144,12 +145,11 @@ const Contact = ({ lightMode, setLightMode }) => {
         </div>
 
         <div
-          data-aos="flip-up"
           onClick={handleClick}
           className={
             lightMode
               ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300 cursor-pointer"
-              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] hover:scale-105 hover:opacity-70 duration-300 cursor-pointer"
+              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 duration-300 cursor-pointer"
           }
         >
           {isLoading ? (

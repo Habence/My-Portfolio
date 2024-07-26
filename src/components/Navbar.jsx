@@ -50,7 +50,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
     <div
       className={`fixed w-full transition-transform duration-300 z-50 ${
         visible ? "translate-y-0" : "-translate-y-full"
-      } ${lightMode ? "bg-slate-100 pt-5" : "bg-[#171717] pt-5"} ${
+      } ${lightMode ? "bg-[#FFFFF0] pt-5" : "backdrop-blur-sm bg-blur pt-5"} ${
         lightMode ? "text-black" : "text-white"
       }`}
     >
