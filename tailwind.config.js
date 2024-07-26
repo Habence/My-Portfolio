@@ -40,7 +40,7 @@ export default {
     function ({ addUtilities }) {
       addUtilities({
         ".bg-custom": {
-          "@apply bg-center bg-no-repeat bg-cover": {},
+          "@apply bg-center": {},
           "background-attachment": "fixed",
           "background-position": "center",
           "background-image": "url('../public/space.jpg')",

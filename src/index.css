@@ -4,19 +4,10 @@
 
 body {
   margin: 0;
-  @apply bg-center bg-fixed bg-cover;
-  background-image: url("../public/space.jpg");
-  min-height: 100vh;
-  background-size: cover;
-}
 
-html,
-body {
-  height: 100%;
-}
-
-#root {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
+  background-color: #171717;
+  /* @apply bg-[#171717] bg-center bg-no-repeat bg-cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../public/space.jpg); */
 }
