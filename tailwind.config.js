@@ -61,7 +61,7 @@ export default {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/horizontalSpace.png')",
+          "background-image": "url('../public/horizontalSpace.jpg')",
         },
       });
     },
