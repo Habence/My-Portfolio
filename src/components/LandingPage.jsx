@@ -4,7 +4,7 @@ import { Parallax, ParallaxLayer } from "@react-spring/parallax";
 
 const LandingPage = () => {
   return (
-    <div className="text-white px-20 py-[10rem]">
+    <div className="text-white px-5 py-[10rem]">
       <Parallax pages={4}>
         <ParallaxLayer speed={1}>
           <p className="text-5xl text-white">HEllO WELCOME</p>
