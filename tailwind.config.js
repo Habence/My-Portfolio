@@ -4,8 +4,8 @@ export default {
   theme: {
     extend: {
       screens: {
-        xs: { max: "500px" },
-        max_sm: { max: "640px" },
+        xs: { max: "500px" }, // Custom breakpoint for screens below 500px
+        max_sm: { max: "640px" }, // Custom breakpoint for screens below 500px
       },
       backdropBlur: {
         xs: "2px",
@@ -27,17 +27,38 @@ export default {
       },
       backgroundSize: {
         cover: "cover",
-        contain: "contain",
       },
       backgroundPosition: {
         center: "center",
       },
       backgroundAttachment: {
         fixed: "fixed",
-        local: "local",
-        scroll: "scroll",
       },
     },
   },
-  plugins: [],
+  plugins: [
+    function ({ addUtilities }) {
+      addUtilities({
+        ".bg-custom": {
+          "@apply bg-center bg-no-repeat bg-cover": {},
+          "background-attachment": "fixed",
+          "background-position": "center",
+          "background-image": "url('../public/space.jpg')",
+        },
+        ".bence": {
+          "@apply bg-center bg-no-repeat bg-cover": {},
+          "background-attachment": "fixed",
+          "background-position": "center",
+          "background-image": "url('../public/bence.png')",
+        },
+
+        ".bence_colored": {
+          "@apply bg-center bg-no-repeat bg-cover": {},
+          "background-attachment": "fixed",
+          "background-position": "center",
+          "background-image": "url('../public/bence_colored.png')",
+        },
+      });
+    },
+  ],
 };
