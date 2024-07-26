@@ -10,7 +10,9 @@ import {
 import "../index.css";
 
 const LandingPage = () => {
-  return <div></div>;
+  return (
+    <div className="bg-lightSpace bg-cover bg-center bg-fixed h-[100vh] w-full"></div>
+  );
 };
 
 export default LandingPage;

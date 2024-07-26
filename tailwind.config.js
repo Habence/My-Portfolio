@@ -21,7 +21,7 @@ export default {
       },
       backgroundImage: {
         space: "url('../public/space.jpg')",
-        lightSpace: "url('../public/lightSpace.jpg')",
+        lightSpace: "url('../public/spacy.jpg')",
         "custom-space": "url('../public/mobileSpace.jpg')",
         "custom-spacely": "url('../public/space.jpg')",
       },
