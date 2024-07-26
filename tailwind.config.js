@@ -22,7 +22,7 @@ export default {
       backgroundImage: {
         space: "url('../public/space.jpg')",
         lightSpace: "url('../public/lightSpace.jpg')",
-        horizontalSpace: "url('../public/horizontalSpace.jpg')",
+        "custom-space": "url('../public/horizontal.jpg')",
       },
       backgroundSize: {
         cover: "cover",
@@ -56,12 +56,6 @@ export default {
           "background-attachment": "fixed",
           "background-position": "center",
           "background-image": "url('../public/bence_colored.png')",
-        },
-        ".horizontal_space": {
-          "@apply bg-center bg-no-repeat bg-cover": {},
-          "background-attachment": "fixed",
-          "background-position": "center",
-          "background-image": "url('../public/horizontalSpace.jpg')",
         },
       });
     },
