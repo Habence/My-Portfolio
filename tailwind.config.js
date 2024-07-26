@@ -58,6 +58,19 @@ export default {
           "background-position": "center",
           "background-image": "url('../public/bence_colored.png')",
         },
+
+        ".bg-custom": {
+          "background-attachment": "fixed",
+          "background-position": "center",
+          "background-size": "cover",
+          "background-repeat": "no-repeat",
+          "background-image": "url('../public/horizontal.jpg')",
+        },
+        "@screen max_sm": {
+          ".bg-custom": {
+            "background-attachment": "scroll", // To avoid issues on small devices
+          },
+        },
       });
     },
   ],
