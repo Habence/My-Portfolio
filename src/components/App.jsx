@@ -1,6 +1,5 @@
 import React, { useState, useEffect } from "react";
 import Navbar from "./Navbar";
-import LandingPage from "./LandingPage";
 import Hero from "./Hero";
 import Contact from "./Contact";
 import useSmoothScroll from "../useSmoothScroll";
@@ -13,8 +12,8 @@ const App = () => {
   return (
     <div className="md:bg-custom max_md:bg-custom-spacely max_md:bg-cover bg-no-repeat max_md:bg-fixed">
       <Navbar lightMode={lightMode} setLightMode={setLightMode} />
-      <LandingPage />
       <Hero lightMode={lightMode} setLightMode={setLightMode} />
+
       <Contact lightMode={lightMode} setLightMode={setLightMode} />
     </div>
   );
