@@ -56,6 +56,12 @@ export default {
           "background-position": "center",
           "background-image": "url('../public/bence_colored.png')",
         },
+        ".horizontal_space": {
+          "@apply bg-center bg-no-repeat bg-cover": {},
+          "background-attachment": "fixed",
+          "background-position": "center",
+          "background-image": "url('../public/horizontalSpace.jpg')",
+        },
       });
     },
   ],

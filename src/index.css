@@ -5,14 +5,9 @@
 body {
   margin: 0;
 
-  @apply bg-[#171717] bg-center bg-no-repeat;
+  background-color: #171717;
+  @apply bg-[#171717] bg-center bg-no-repeat bg-cover;
+  background-attachment: fixed;
+  background-position: center;
   background-image: url(../public/space.jpg);
-  background-size: cover;
-  background-attachment: scroll; /* Change the attachment to scroll for better mobile compatibility */
-}
-
-@media (min-width: 768px) {
-  body {
-    background-attachment: fixed; /* Set attachment to fixed for larger screens */
-  }
 }
