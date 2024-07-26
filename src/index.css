@@ -6,6 +6,7 @@ body {
   margin: 0;
 
   background-color: #171717;
+  background-attachment: scroll; /* Change to scroll if fixed causes issues */
   /* @apply bg-[#171717] bg-center bg-no-repeat bg-cover;
   background-attachment: fixed;
   background-position: center;
