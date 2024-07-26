@@ -1,28 +1,22 @@
-/* index.css */
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 body {
   margin: 0;
-  background-color: #171717;
-  background-image: url(../public/space.jpg);
-  @apply bg-center bg-no-repeat bg-cover;
-
+  @apply bg-[#171717] bg-center bg-no-repeat bg-cover;
   background-attachment: fixed;
+  background-image: url("../public/space.jpg");
+  min-height: 100vh;
 }
 
-@media (max-width: 768px) {
-  body {
-    background-size: auto;
-    background-position: center top;
-  }
+html,
+body {
+  height: 100%;
 }
 
-@media (min-width: 769px) {
-  body {
-    background-size: cover;
-    background-position: center;
-  }
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
 }
