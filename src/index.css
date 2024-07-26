@@ -11,9 +11,3 @@ body {
 
   background-image: url(../public/space.jpg);
 }
-
-@media (max-width: 768px) {
-  body {
-    background-size: contain;
-  }
-}
