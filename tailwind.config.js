@@ -22,7 +22,7 @@ export default {
       backgroundImage: {
         space: "url('../public/space.jpg')",
         lightSpace: "url('../public/lightSpace.jpg')",
-        "custom-space": "url('../public/space2.jpg')",
+        "custom-space": "url('../public/horizontal.jpg')",
         "custom-spacely": "url('../public/space.jpg')",
       },
       backgroundSize: {
