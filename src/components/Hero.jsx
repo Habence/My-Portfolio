@@ -17,6 +17,7 @@ import mysql from "../../public/mysql.png";
 import php from "../../public/php.png";
 import git from "../../public/git.png";
 import vscode from "../../public/vscode.png";
+import coder from "../../public/coder.png";
 import Zoom from "@mui/material/Zoom";
 import Slide from "@mui/material/Slide";
 import AOS from "aos";
@@ -46,8 +47,8 @@ const Hero = ({ lightMode }) => {
       id="home"
       className={
         lightMode
-          ? "bg-[#FFFFF0] flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
-          : " bg-black  bg-opacity-30  flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:pt-[10rem] sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
+          ? "bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
+          : " bg-black transition-colors duration-500 bg-opacity-30  flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:pt-[10rem] sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
       }
     >
       <div
@@ -59,10 +60,11 @@ const Hero = ({ lightMode }) => {
           <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full  w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <Zoom in={true} timeout={1000}>
               <img
+                src={coder}
                 className={
                   lightMode
-                    ? "object-cover bence_colored w-full h-full "
-                    : "object-cover bence w-full h-full"
+                    ? "object-cover  w-full h-full "
+                    : "object-cover  w-full h-full"
                 }
               />
             </Zoom>
@@ -74,7 +76,7 @@ const Hero = ({ lightMode }) => {
           className={
             lightMode
               ? "rounded-xl md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
-              : "bg-black bg-opacity-20 rounded-xl md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
+              : " rounded-xl md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
           }
         >
           <Slide in={true} timeout={1000}>
