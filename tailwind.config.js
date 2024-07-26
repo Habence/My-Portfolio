@@ -22,6 +22,7 @@ export default {
       backgroundImage: {
         space: "url('../public/space.jpg')",
         lightSpace: "url('../public/lightSpace.jpg')",
+        horizontalSpace: "url('../public/horizontalSpace.jpg')",
       },
       backgroundSize: {
         cover: "cover",
@@ -60,7 +61,7 @@ export default {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/horizontalSpace.jpg')",
+          "background-image": "url('../public/horizontalSpace.png')",
         },
       });
     },
