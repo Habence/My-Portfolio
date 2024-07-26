@@ -20,11 +20,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      backgroundImage: {
-        space: "url('../public/space.jpg')",
-        lightSpace: "url('../public/horizontal.jpg')",
-        "custom-spacely": "url('../public/space.jpg')",
-      },
+      backgroundImage: {},
       backgroundSize: {
         cover: "cover",
       },
