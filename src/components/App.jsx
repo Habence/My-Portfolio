@@ -4,6 +4,7 @@ import LandingPage from "./LandingPage";
 import Hero from "./Hero";
 import Contact from "./Contact";
 import useSmoothScroll from "../useSmoothScroll";
+import "../index.css";
 
 const App = () => {
   useSmoothScroll();
