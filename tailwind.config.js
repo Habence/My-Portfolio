@@ -6,6 +6,7 @@ export default {
       screens: {
         xs: { max: "500px" }, // Custom breakpoint for screens below 500px
         max_sm: { max: "640px" }, // Custom breakpoint for screens below 500px
+        max_md: { max: "748px" },
       },
       backdropBlur: {
         xs: "2px",
