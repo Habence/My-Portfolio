@@ -6,6 +6,7 @@ export default {
       screens: {
         xs: { max: "500px" }, // Custom breakpoint for screens below 500px
         max_sm: { max: "640px" }, // Custom breakpoint for screens below 500px
+        max_md: { max: "768px" },
       },
       backdropBlur: {
         xs: "2px",
@@ -16,6 +17,7 @@ export default {
         "2xl": "24px",
         "3xl": "40px",
       },
+
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
