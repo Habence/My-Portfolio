@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useEffect, useState, useRef } from "react";
 import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
@@ -11,6 +11,7 @@ import Slide from "@mui/material/Slide";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
+import emailjs from "@emailjs/browser";
 
 const Contact = ({ lightMode, setLightMode }) => {
   const [isLoading, setIsLoading] = useState(false);
@@ -27,6 +28,26 @@ const Contact = ({ lightMode, setLightMode }) => {
       window.open(googleMapsUrl, "_blank", "noopener,noreferrer");
       setIsLoading(false);
     }, 500); // Brief delay to show the loading spinner
+  };
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm("service_y2nr9qy", "template_qaw6ukw", form.current, {
+        publicKey: "h0YauzHnDTT0apT1E",
+      })
+      .then(
+        () => {
+          console.log("SUCCESS!");
+        },
+        (error) => {
+          console.log("FAILED...", error.text);
+        }
+      );
+    e.target.reset();
   };
 
   return (
@@ -78,6 +99,44 @@ const Contact = ({ lightMode, setLightMode }) => {
       >
         <p className="cursor-pointer">Send an Email</p>
         <MdArrowOutward className="ml-2" />
+      </div>
+
+      <div className="my-[5rem] w-full">
+        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
+          <input
+            name="user_name"
+            type="text"
+            placeholder="Enter name"
+            className="rounded-md p-2 w-full h-[3rem]"
+          />
+          <input
+            name="user_email"
+            type="email"
+            placeholder="sample@gmail.com"
+            className="rounded-md p-2 w-full h-[3rem]"
+          />
+          <input
+            name="subject"
+            type="text"
+            placeholder="Enter Subject"
+            className="rounded-md p-2 w-full h-[3rem]"
+          />
+          <textarea
+            name="message"
+            id=""
+            cols={50}
+            rows={7}
+            placeholder="Leave a message"
+            className="rounded-md p-2 w-full h-[12rem]"
+          ></textarea>
+
+          <button
+            type="submit"
+            className=" font-poppins font-semibold cursor-pointer rounded-lg h-[3rem] bg-white w-[10rem]"
+          >
+            Send Message
+          </button>
+        </form>
       </div>
 
       <div
