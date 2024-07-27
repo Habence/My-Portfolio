@@ -104,24 +104,28 @@ const Contact = ({ lightMode, setLightMode }) => {
       <div className="my-[5rem] w-full">
         <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
           <input
+            required
             name="user_name"
             type="text"
             placeholder="Enter name"
             className="rounded-md p-2 w-full h-[3rem]"
           />
           <input
+            required
             name="user_email"
             type="email"
             placeholder="sample@gmail.com"
             className="rounded-md p-2 w-full h-[3rem]"
           />
           <input
+            required
             name="subject"
             type="text"
             placeholder="Enter Subject"
             className="rounded-md p-2 w-full h-[3rem]"
           />
           <textarea
+            required
             name="message"
             id=""
             cols={50}
