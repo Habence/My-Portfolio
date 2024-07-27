@@ -101,193 +101,230 @@ const Contact = ({ lightMode, setLightMode }) => {
         <MdArrowOutward className="ml-2" />
       </div>
 
-      <div className="my-[5rem] w-full">
-        <form ref={form} onSubmit={sendEmail} className="flex flex-col gap-4">
-          <input
-            required
-            name="user_name"
-            type="text"
-            placeholder="Enter name"
-            className="rounded-md p-2 w-full h-[3rem]"
-          />
-          <input
-            required
-            name="user_email"
-            type="email"
-            placeholder="sample@gmail.com"
-            className="rounded-md p-2 w-full h-[3rem]"
-          />
-          <input
-            required
-            name="subject"
-            type="text"
-            placeholder="Enter Subject"
-            className="rounded-md p-2 w-full h-[3rem]"
-          />
-          <textarea
-            required
-            name="message"
-            id=""
-            cols={50}
-            rows={7}
-            placeholder="Leave a message"
-            className="rounded-md p-2 w-full h-[12rem]"
-          ></textarea>
+      {/* =====================FILL-UP SECTION=================== */}
 
-          <button
-            type="submit"
-            className=" font-poppins font-semibold cursor-pointer rounded-lg h-[3rem] bg-white w-[10rem]"
+      <div className=" lg:flex lg:flex-row xl:flex xl:flex-row 2xl:flex 2xl:flex-row w-full">
+        <div
+          data-aos="flip-up"
+          className={
+            lightMode
+              ? "my-[2rem] p-8 w-full bg-slate-300 shadow-xl rounded-lg lg:w-[100%] 2xl:w-[100%] xl:w-[100%]"
+              : "my-[2rem] p-8 w-full bg-[#38343c] bg-opacity-70 shadow-xl rounded-lg lg:w-[100%] 2xl:w-[100%] xl:w-[100%]"
+          }
+        >
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="flex flex-col gap-6 justify-start"
           >
-            Send Message
-          </button>
-        </form>
-      </div>
+            <input
+              required
+              name="user_name"
+              type="text"
+              placeholder="Full Name"
+              className={
+                lightMode
+                  ? "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                  : "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-[#FEC45D] focus:outline-none"
+              }
+            />
+            <input
+              required
+              name="user_email"
+              type="email"
+              placeholder="E-mail"
+              className={
+                lightMode
+                  ? "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                  : "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-[#FEC45D] focus:outline-none"
+              }
+            />
+            <input
+              required
+              name="subject"
+              type="text"
+              placeholder="Enter Subject"
+              className={
+                lightMode
+                  ? "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                  : "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-[#FEC45D] focus:outline-none"
+              }
+            />
+            <textarea
+              required
+              name="message"
+              cols={50}
+              rows={7}
+              placeholder="Leave a message"
+              className={
+                lightMode
+                  ? "rounded-lg shadow-lg p-4 w-full h-[12rem] text-gray-800 focus:ring-2 focus:ring-teal-600 focus:outline-none"
+                  : "rounded-lg shadow-lg p-4 w-full h-[12rem] text-gray-800 focus:ring-2 focus:ring-[#FEC45D] focus:outline-none"
+              }
+            ></textarea>
 
-      <div
-        data-aos="flip-up"
-        className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center  "
-      >
+            <button
+              type="submit"
+              className={
+                lightMode
+                  ? "font-poppins font-semibold cursor-pointer rounded-lg h-[3rem] text-white bg-teal-600 shadow-lg w-[10rem] hover:bg-teal-600 transition-transform transform hover:scale-105 duration-300 self-center"
+                  : "font-poppins font-semibold cursor-pointer rounded-lg h-[3rem] text-white bg-[#e5b14c] shadow-lg w-[10rem] hover:bg-[#e5b14c] transition-transform transform hover:scale-105 duration-300 self-center"
+              }
+            >
+              Send Message
+            </button>
+          </form>
+        </div>
+
         <div
-          className={
-            lightMode
-              ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
-              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 hover:opacity-70 duration-300"
-          }
+          data-aos="flip-up"
+          className="mt-6 flex flex-col gap-4 px-4 sm:flex-row sm:flex-wrap sm:justify-center lg:flex-col lg:justify-start lg:mt-8 xl:flex-col xl:justify-start xl:mt-8 2xl:flex-col 2xl:justify-start 2xl:mt-8 "
         >
-          <MdEmail
-            size={30}
+          <div
             className={
               lightMode
-                ? "hover:animate-pulse text-teal-600"
-                : "hover:animate-pulse text-[#FEC45D]"
+                ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
+                : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 hover:opacity-70 duration-300"
             }
-          />
-          <Slide in={true} direction="right" timeout={1000}>
-            <div className="mt-1">
-              <p
-                className={
-                  lightMode
-                    ? "text-black font-poppins font-normal"
-                    : "text-[white] font-poppins font-normal"
-                }
-              >
-                micklayvince@gmail.com
-              </p>
-            </div>
-          </Slide>
-        </div>
-
-        <div
-          className={
-            lightMode
-              ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
-              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 hover:opacity-70 duration-300"
-          }
-        >
-          <FaPhoneAlt
-            size={30}
-            className={
-              lightMode
-                ? "hover:animate-pulse text-teal-600"
-                : "hover:animate-pulse text-[#FEC45D]"
-            }
-          />
-          <Slide in={true} direction="right" timeout={1000}>
-            <div className="mt-1">
-              <p
-                className={
-                  lightMode
-                    ? "text-black font-poppins font-normal"
-                    : "text-[white] font-poppins font-normal"
-                }
-              >
-                +63 (908) 579-6392
-              </p>
-            </div>
-          </Slide>
-        </div>
-
-        <div
-          onClick={handleClick}
-          className={
-            lightMode
-              ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300 cursor-pointer"
-              : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 duration-300 cursor-pointer"
-          }
-        >
-          {isLoading ? (
-            <AiOutlineLoading3Quarters
-              className={
-                lightMode
-                  ? "animate-spin text-teal-600"
-                  : "animate-spin text-[#FEC45D]"
-              }
-              size={30}
-            />
-          ) : (
-            <FaLocationDot
+          >
+            <MdEmail
               size={30}
               className={
                 lightMode
-                  ? "hover:animate-bounce text-teal-600"
-                  : "hover:animate-bounce text-[#FEC45D]"
+                  ? "hover:animate-pulse text-teal-600"
+                  : "hover:animate-pulse text-[#FEC45D]"
               }
             />
-          )}
-
-          <Slide in={true} direction="right" timeout={1000}>
-            <div className="mt-1">
-              <p
-                className={
-                  lightMode
-                    ? "text-black font-poppins font-normal"
-                    : "text-[white] font-poppins font-normal"
-                }
-              >
-                Baguio City, Philippines
-              </p>
-            </div>
-          </Slide>
-        </div>
-      </div>
-      <div data-aos="flip-up" className="flex flex-col text-center w-full">
-        <Slide in={true} direction="up" timeout={1000}>
-          <div className="flex my-8  gap-12 w-full px-6 sm:flex sm:justify-center">
-            <FaFacebookSquare
-              size={30}
-              className={
-                lightMode
-                  ? "hover:animate-spin text-teal-600"
-                  : "hover:animate-spin text-[#FEC45D]"
-              }
-            />
-            <FaInstagram
-              size={30}
-              className={
-                lightMode
-                  ? "hover:animate-spin text-teal-600"
-                  : "hover:animate-spin text-[#FEC45D]"
-              }
-            />
-            <FaTelegram
-              size={30}
-              className={
-                lightMode
-                  ? "hover:animate-spin text-teal-600"
-                  : "hover:animate-spin text-[#FEC45D]"
-              }
-            />
-            <FaLinkedin
-              size={30}
-              className={
-                lightMode
-                  ? "hover:animate-spin text-teal-600"
-                  : "hover:animate-spin text-[#FEC45D]"
-              }
-            />
+            <Slide in={true} direction="right" timeout={1000}>
+              <div className="mt-1">
+                <p
+                  className={
+                    lightMode
+                      ? "text-black font-poppins font-normal"
+                      : "text-[white] font-poppins font-normal"
+                  }
+                >
+                  micklayvince@gmail.com
+                </p>
+              </div>
+            </Slide>
           </div>
-        </Slide>
+
+          <div
+            className={
+              lightMode
+                ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300"
+                : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 hover:opacity-70 duration-300"
+            }
+          >
+            <FaPhoneAlt
+              size={30}
+              className={
+                lightMode
+                  ? "hover:animate-pulse text-teal-600"
+                  : "hover:animate-pulse text-[#FEC45D]"
+              }
+            />
+            <Slide in={true} direction="right" timeout={1000}>
+              <div className="mt-1">
+                <p
+                  className={
+                    lightMode
+                      ? "text-black font-poppins font-normal"
+                      : "text-[white] font-poppins font-normal"
+                  }
+                >
+                  +63 (908) 579-6392
+                </p>
+              </div>
+            </Slide>
+          </div>
+
+          <div
+            onClick={handleClick}
+            className={
+              lightMode
+                ? " flex shadow-2xl rounded-md gap-4  p-4 hover:scale-105 duration-300 cursor-pointer"
+                : " flex shadow-2xl rounded-md gap-4  p-4 bg-[#38343c] bg-opacity-50 hover:scale-105 duration-300 cursor-pointer"
+            }
+          >
+            {isLoading ? (
+              <AiOutlineLoading3Quarters
+                className={
+                  lightMode
+                    ? "animate-spin text-teal-600"
+                    : "animate-spin text-[#FEC45D]"
+                }
+                size={30}
+              />
+            ) : (
+              <FaLocationDot
+                size={30}
+                className={
+                  lightMode
+                    ? "hover:animate-bounce text-teal-600"
+                    : "hover:animate-bounce text-[#FEC45D]"
+                }
+              />
+            )}
+
+            <Slide in={true} direction="right" timeout={1000}>
+              <div className="mt-1">
+                <p
+                  className={
+                    lightMode
+                      ? "text-black font-poppins font-normal"
+                      : "text-[white] font-poppins font-normal"
+                  }
+                >
+                  Baguio City, Philippines
+                </p>
+              </div>
+            </Slide>
+          </div>
+          <div data-aos="flip-up" className="flex flex-col text-center w-full">
+            <Slide in={true} direction="up" timeout={1000}>
+              <div className="flex my-8  gap-12 w-full px-6 sm:flex sm:justify-center">
+                <FaFacebookSquare
+                  size={30}
+                  className={
+                    lightMode
+                      ? "hover:animate-spin text-teal-600"
+                      : "hover:animate-spin text-[#FEC45D]"
+                  }
+                />
+                <FaInstagram
+                  size={30}
+                  className={
+                    lightMode
+                      ? "hover:animate-spin text-teal-600"
+                      : "hover:animate-spin text-[#FEC45D]"
+                  }
+                />
+                <FaTelegram
+                  size={30}
+                  className={
+                    lightMode
+                      ? "hover:animate-spin text-teal-600"
+                      : "hover:animate-spin text-[#FEC45D]"
+                  }
+                />
+                <FaLinkedin
+                  size={30}
+                  className={
+                    lightMode
+                      ? "hover:animate-spin text-teal-600"
+                      : "hover:animate-spin text-[#FEC45D]"
+                  }
+                />
+              </div>
+            </Slide>
+          </div>
+        </div>
       </div>
+
+      {/* ======================END OF SECTION========================= */}
+
       <Slide in={true} direction="up" timeout={1000}>
         <div
           className={
