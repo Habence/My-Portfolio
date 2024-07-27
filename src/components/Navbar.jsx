@@ -48,8 +48,10 @@ const Navbar = ({ lightMode, setLightMode }) => {
 
   return (
     <div
-      className={`fixed w-full transition-transform duration-300 z-50 ${
-        visible ? "translate-y-0" : "-translate-y-full"
+      className={`fixed w-full  z-50 ${
+        visible
+          ? "translate-y-0 transition-transform duration-300"
+          : " transition-transform duration-300 -translate-y-full"
       } ${
         lightMode
           ? "bg-[#FFFFF0] pt-5 transition-colors duration-500"
@@ -183,8 +185,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
           <div
             className={
               lightMode
-                ? "fixed inset-0 bg-slate-100 h-[100vh] text-black flex flex-col items-center justify-center z-40 md:hidden"
-                : "fixed inset-0 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 md:hidden"
+                ? "fixed inset-0 duration-300 bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 md:hidden"
+                : "fixed inset-0 duration-300 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 md:hidden"
             }
           >
             <Slide in={true} direction="down" timeout={1000}>

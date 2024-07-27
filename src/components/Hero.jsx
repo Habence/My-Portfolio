@@ -55,6 +55,7 @@ const Hero = ({ lightMode }) => {
         data-aos="flip-up"
         className="w-full max_sm:flex max_sm:flex-col-reverse sm:flex sm:flex-col-reverse md:flex md:flex-col-reverse md:justify-center lg:flex lg:flex-row-reverse"
       >
+        {/* ============== //MY IMAGE ============== */}
         <Zoom in={true} timeout={1000}>
           <div className="relative mx-auto bg-gradient-to-b object-contain w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <Zoom in={true} timeout={1000}>
@@ -73,14 +74,13 @@ const Hero = ({ lightMode }) => {
         <div
           className={
             lightMode
-              ? "rounded-xl md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
-              : " rounded-xl md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
+              ? " md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
+              : " md:flex md:flex-col md:items-start lg:flex lg:flex-col lg:justify-center"
           }
         >
-          <Slide in={true} timeout={1000}>
+          <Slide in={true} direction="right" timeout={1000}>
             <div className="xs:mt-10 sm:mt-10">
               <p
-                data-aos="flip-left"
                 className={
                   lightMode
                     ? "text-black font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl"
@@ -204,7 +204,13 @@ const Hero = ({ lightMode }) => {
             : "flex flex-col mt-10 items-center gap-8  text-white font-poppins font-normal md:flex md:flex-col md:flex-wrap lg:flex lg:flex-row lg:flex-wrap lg:justify-between xl:justify-between xl:grid xl:grid-cols-2 2xl:gap-24 2xl:grid 2xl:grid-cols-2"
         }
       >
-        <div className="w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          className={
+            lightMode
+              ? "w-full border-b-2  backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+              : "w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+          }
+        >
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
@@ -232,7 +238,13 @@ const Hero = ({ lightMode }) => {
           </div>
         </div>
 
-        <div className="w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          className={
+            lightMode
+              ? "w-full border-b-2  backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+              : "w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+          }
+        >
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
@@ -260,7 +272,13 @@ const Hero = ({ lightMode }) => {
           </div>
         </div>
 
-        <div className="w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          className={
+            lightMode
+              ? "w-full border-b-2  backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+              : "w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+          }
+        >
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
@@ -288,7 +306,13 @@ const Hero = ({ lightMode }) => {
           </div>
         </div>
 
-        <div className="w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 cursor-default md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]">
+        <div
+          className={
+            lightMode
+              ? "w-full border-b-2  backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+              : "w-full border-b-2 border-black backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
+          }
+        >
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
