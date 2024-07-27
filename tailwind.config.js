@@ -26,6 +26,7 @@ export default {
         lightSpace: "url('../public/spacy.jpg')",
         "custom-space": "url('../public/mobileSpace.jpg')",
         "custom-spacely": "url('../public/space.jpg')",
+        yellowCoder: "url('../public/yellowCoder.svg')",
       },
       backgroundSize: {
         cover: "cover",
@@ -47,18 +48,18 @@ export default {
           "background-position": "center",
           "background-image": "url('../public/space.jpg')",
         },
-        ".bence": {
+        ".yellowCoder": {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/bence.png')",
+          "background-image": "url('../public/yellowCoder.svg')",
         },
 
-        ".bence_colored": {
+        ".blueCoder": {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/bence_colored.png')",
+          "background-image": "url('../public/lightCoder.svg')",
         },
       });
     },

@@ -53,18 +53,16 @@ const Hero = ({ lightMode }) => {
     >
       <div
         data-aos="flip-up"
-        className="w-full md:flex md:flex-col md:justify-center lg:flex lg:flex-row-reverse"
+        className="w-full max_sm:flex max_sm:flex-col-reverse sm:flex sm:flex-col-reverse md:flex md:flex-col-reverse md:justify-center lg:flex lg:flex-row-reverse"
       >
         <Zoom in={true} timeout={1000}>
-          {/* ============== //MY IMAGE ============== */}
-          <div className="relative mx-auto bg-gradient-to-b object-contain rounded-full  w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
+          <div className="relative mx-auto bg-gradient-to-b object-contain w-80 h-80 overflow-hidden mb-4 md:h-96 md:w-96 max_sm:h-[220px] max_sm:w-[220px]">
             <Zoom in={true} timeout={1000}>
-              <img
-                src={coder}
+              <div
                 className={
                   lightMode
-                    ? "object-cover  w-full h-full "
-                    : "object-cover  w-full h-full"
+                    ? "object-contain blueCoder  w-full h-full"
+                    : "object-contain yellowCoder w-full h-full"
                 }
               />
             </Zoom>
