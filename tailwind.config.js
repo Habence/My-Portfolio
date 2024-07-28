@@ -26,7 +26,7 @@ export default {
         space: "url('../public/space.jpg')",
         lightSpace: "url('../public/spacy.jpg')",
         "custom-space": "url('../public/mobileSpace.jpg')",
-        "custom-spacely": "url('../public/space.jpg')",
+        "custom-spacely": "url('../public/spaceWebsite.jpg')",
         yellowCoder: "url('../public/yellowCoder.svg')",
       },
 
@@ -45,7 +45,8 @@ export default {
           "@apply bg-center": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/space.jpg')",
+          "background-size": "cover",
+          "background-image": "url('../public/spaceWebsite.jpg')",
         },
         ".yellowCoder": {
           "@apply bg-center bg-no-repeat bg-cover": {},

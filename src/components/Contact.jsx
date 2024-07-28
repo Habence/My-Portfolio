@@ -132,7 +132,7 @@ const Contact = ({ lightMode, setLightMode }) => {
               required
               name="user_email"
               type="email"
-              placeholder="E-mail"
+              placeholder="E-mail (Your Email)"
               className={
                 lightMode
                   ? "rounded-lg shadow-lg p-4 w-full h-[3rem] text-gray-800 focus:ring-2 focus:ring-teal-600 focus:outline-none"

@@ -23,7 +23,7 @@ const FullViewImage = ({ src, alt, onClose }) => {
       <img
         src={src}
         alt={alt}
-        className={`max-h-full max-w-full p-10 transform transition-transform duration-1000 ${
+        className={`max-h-full max-w-full md:p-10 transform transition-transform duration-1000 ${
           isZoomed ? "scale-100" : "scale-0"
         }`}
       />
