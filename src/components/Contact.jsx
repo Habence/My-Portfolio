@@ -13,6 +13,8 @@ import "aos/dist/aos.css";
 import { AiOutlineLoading3Quarters } from "react-icons/ai";
 import emailjs from "@emailjs/browser";
 
+import Swal from "sweetalert2";
+
 const Contact = ({ lightMode, setLightMode }) => {
   const [isLoading, setIsLoading] = useState(false);
   const googleMapsUrl =
@@ -48,6 +50,16 @@ const Contact = ({ lightMode, setLightMode }) => {
         }
       );
     e.target.reset();
+    Swal.fire({
+      icon: "success",
+      title: "Message Sent",
+      text: "Thanks!",
+      showConfirmButton: false,
+      timer: 1500,
+      customClass: {
+        popup: lightMode ? "swal2-popup-light" : "swal2-popup-dark",
+      },
+    });
   };
 
   return (

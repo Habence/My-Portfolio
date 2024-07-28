@@ -4,10 +4,13 @@
 
 body {
   margin: 0;
-
-  /* background-color: #171717;
+  background-color: #171717;
   background-attachment: fixed;
   background-position: center;
-  background-image: url(../public/space.jpg); */
-  background-image: linear-gradient(to left, rgb(68, 64, 78), rgb(40, 38, 46));
+  background-image: url(/spaceWebsite.jpg);
+  /* background-image: linear-gradient(
+    to right,
+    rgb(45, 44, 44),
+    rgb(138, 138, 129)
+  ); */
 }

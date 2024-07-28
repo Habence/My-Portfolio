@@ -22,13 +22,7 @@ export default {
       fontFamily: {
         poppins: ["Poppins", "sans-serif"],
       },
-      backgroundImage: {
-        space: "url('../public/space.jpg')",
-        lightSpace: "url('../public/spacy.jpg')",
-        "custom-space": "url('../public/mobileSpace.jpg')",
-        "custom-spacely": "url('../public/spaceWebsite.jpg')",
-        yellowCoder: "url('../public/yellowCoder.svg')",
-      },
+      backgroundImage: {},
 
       backgroundPosition: {
         center: "center",
@@ -60,6 +54,14 @@ export default {
           "background-attachment": "fixed",
           "background-position": "center",
           "background-image": "url('../public/lightCoder.svg')",
+        },
+        ".swal2-popup-light": {
+          "background-color": "white",
+          color: "#0d9488",
+        },
+        ".swal2-popup-dark": {
+          "background-color": "#38343c",
+          color: "#FEC45D",
         },
       });
     },
