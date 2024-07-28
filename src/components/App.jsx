@@ -10,7 +10,7 @@ const App = () => {
   const [lightMode, setLightMode] = useState(false);
 
   return (
-    <div className="bg-space bg-center bg-no-repeat bg-cover bg-fixed min-h-screen">
+    <div>
       <Navbar lightMode={lightMode} setLightMode={setLightMode} />
       <Hero lightMode={lightMode} setLightMode={setLightMode} />
       <Contact lightMode={lightMode} setLightMode={setLightMode} />
