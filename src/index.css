@@ -5,8 +5,9 @@
 body {
   margin: 0;
 
-  background-color: #171717;
+  /* background-color: #171717;
   background-attachment: fixed;
   background-position: center;
-  background-image: url(../public/spaceWebsite.jpg);
+  background-image: url(../public/space.jpg); */
+  background-image: linear-gradient(to left, rgb(68, 64, 78), rgb(40, 38, 46));
 }
