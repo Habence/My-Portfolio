@@ -42,12 +42,12 @@ export default {
   plugins: [
     function ({ addUtilities }) {
       addUtilities({
-        ".bg-custom": {
-          "@apply bg-center": {},
-          "background-attachment": "fixed",
-          "background-position": "center",
-          "background-image": "url('../public/space.jpg')",
-        },
+        // ".bg-custom": {
+        //   "@apply bg-center": {},
+        //   "background-attachment": "fixed",
+        //   "background-position": "center",
+        //   "background-image": "url('../public/space.jpg')",
+        // },
         ".yellowCoder": {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",

@@ -11,3 +11,23 @@ body {
   background-position: center;
   background-image: url(../public/space.jpg); */
 }
+
+.bg-custom {
+  background-image: url("../public/space.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.bg-custom-spacely {
+  background-image: url("../public/mobileSpace.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+/* Add a media query for iOS specific styles */
+@supports (-webkit-touch-callout: none) {
+  .bg-custom-spacely {
+    background-attachment: scroll; /* Fix for iOS background-attachment issue */
+  }
+}
