@@ -4,11 +4,10 @@
 
 body {
   margin: 0;
-  padding: 0;
+
   background-color: #171717;
-  background-image: url("/space.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center center;
-  background-attachment: scroll;
+  /* @apply bg-[#171717] bg-center bg-no-repeat bg-cover;
+  background-attachment: fixed;
+  background-position: center;
+  background-image: url(../public/space.jpg); */
 }
