@@ -55,7 +55,7 @@ const Contact = ({ lightMode, setLightMode }) => {
       title: "Message Sent",
       text: "Thanks!",
       showConfirmButton: false,
-      timer: 1500,
+      timer: 2000,
       customClass: {
         popup: lightMode ? "swal2-popup-light" : "swal2-popup-dark",
       },
