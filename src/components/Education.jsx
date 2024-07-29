@@ -1,0 +1,117 @@
+import React, { useEffect } from "react";
+import Zoom from "@mui/material/Zoom";
+import Slide from "@mui/material/Slide";
+import graduate from "/public/graduate.svg";
+import AOS from "aos";
+import {
+  VerticalTimeline,
+  VerticalTimelineElement,
+} from "react-vertical-timeline-component";
+import "react-vertical-timeline-component/style.min.css";
+import { color } from "framer-motion";
+
+const Education = ({ lightMode, educationData }) => {
+  useEffect(() => {
+    AOS.init({ duration: 2000 });
+  }, []);
+
+  return (
+    <div
+      className={
+        lightMode
+          ? " bg-[#FFFFF0] cursor-grab transition-colors duration-500 flex flex-col px-10  items-start  xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
+          : " transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
+      }
+    >
+      <div className="mt-10 2xl:mt-28">
+        <Slide in={true} timeout={1000}>
+          <section id="about">
+            <p
+              data-aos="fade-right"
+              className={
+                lightMode
+                  ? "text-black font-semibold text-4xl xl:text-6xl"
+                  : "text-white font-semibold text-4xl xl:text-6xl"
+              }
+            >
+              Educ
+              <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
+                ation
+              </span>
+            </p>
+          </section>
+        </Slide>
+      </div>
+      <Slide in={true} direction="up" timeout={1000}>
+        <div
+          data-aos="fade-up"
+          className={
+            lightMode
+              ? "border-b-2 border-teal-600 w-full my-8"
+              : "border-b-2 border-[#FEC45D] w-full my-8"
+          }
+        ></div>
+      </Slide>
+
+      <VerticalTimeline
+        lineColor={lightMode ? "rgb(13, 148, 136)" : "#FEC45D"}
+        className=""
+      >
+        {educationData.map((item) => (
+          <VerticalTimelineElement
+            key={item.id}
+            contentStyle={{
+              background: lightMode ? "#fff" : "#31333b",
+              color: "#fff",
+              boxShadow: lightMode
+                ? "0 0 20px rgb(13, 148, 136)"
+                : "0 0 20px #FEC45D",
+            }}
+            iconStyle={{
+              background: lightMode ? "#fff" : "#38343c",
+              color: "#fff",
+              boxShadow: lightMode
+                ? "0 0 20px rgb(13, 148, 136)"
+                : "0 0 50px #FEC45D",
+            }}
+            date={
+              <span style={{ color: lightMode ? "#000000 " : "#fff" }}>
+                {item.year}
+              </span>
+            }
+            icon={
+              <div className="flex justify-center items-center w-full h-full">
+                <img
+                  src={item.imageUrl}
+                  alt="Icon"
+                  className="w-full h-full rounded-full"
+                />
+              </div>
+            }
+          >
+            <div
+              className={
+                lightMode
+                  ? "text-black flex flex-col"
+                  : "text-white flex flex-col"
+              }
+            >
+              <p className="font-poppin font-normal text-xl">{item.level}</p>
+              <p className="font-poppin font-normal text-xl">{item.school}</p>
+              <p className="font-poppin font-normal text-xl">{item.course}</p>
+              <div className="border-b-2 my-2 border-b-[#FEC45D]"></div>
+
+              <img
+                src={item.imageUrl}
+                alt={`${item.school} Image`}
+                className="rounded-md h-[15rem]"
+              />
+            </div>
+          </VerticalTimelineElement>
+        ))}
+      </VerticalTimeline>
+    </div>
+  );
+};
+
+export default Education;
