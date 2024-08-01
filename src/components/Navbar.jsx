@@ -241,7 +241,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
               </div>
             </Slide>
 
-            <div className="fixed top-20 bottom-0">
+            <div className="flex flex-col">
               <Slide in={true} timeout={1000}>
                 <ul className="space-y-10 text-3xl font-bold">
                   <Slide in={true} direction="right" timeout={1000}>
@@ -318,7 +318,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 </ul>
               </Slide>
             </div>
-            <div className="mt-[26rem] flex flex-col gap-4">
+            <div className="flex mt-[4rem] flex-col gap-4">
               <Slide in={true} direction="right" timeout={1000}>
                 <p className="font-bold">micklayvince@gmail.com</p>
               </Slide>
