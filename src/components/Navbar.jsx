@@ -224,8 +224,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
           <div
             className={
               lightMode
-                ? "fixed inset-0 duration-300 bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 xl:hidden"
-                : "fixed inset-0 duration-300 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 xl:hidden"
+                ? "fixed inset-0 duration-300 scroll-auto bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 xl:hidden"
+                : "fixed inset-0 duration-300 scroll-auto bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 xl:hidden"
             }
           >
             <Slide in={true} direction="up" timeout={1000}>
