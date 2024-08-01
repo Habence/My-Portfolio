@@ -224,8 +224,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
           <div
             className={
               lightMode
-                ? "fixed inset-0 duration-300 overflow-auto bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 xl:hidden"
-                : "fixed inset-0 duration-300 overflow-auto bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 xl:hidden"
+                ? "fixed inset-0 duration-300 overflow-y-auto bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 xl:hidden"
+                : "fixed inset-0 duration-300 overflow-y-auto bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 xl:hidden"
             }
           >
             <Slide in={true} direction="up" timeout={1000}>
@@ -241,7 +241,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
               </div>
             </Slide>
 
-            <div className="fixed top-28 bottom-0">
+            <div className="fixed top-20 bottom-0">
               <Slide in={true} timeout={1000}>
                 <ul className="space-y-10 text-3xl font-bold">
                   <Slide in={true} direction="right" timeout={1000}>
@@ -318,7 +318,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 </ul>
               </Slide>
             </div>
-            <div className="mt-[32rem] flex flex-col gap-4">
+            <div className="mt-[26rem] flex flex-col gap-4">
               <Slide in={true} direction="right" timeout={1000}>
                 <p className="font-bold">micklayvince@gmail.com</p>
               </Slide>
