@@ -1,16 +1,13 @@
 import React, { useEffect } from "react";
-import Zoom from "@mui/material/Zoom";
 import Slide from "@mui/material/Slide";
-import graduate from "/public/graduate.svg";
 import AOS from "aos";
 import {
   VerticalTimeline,
   VerticalTimelineElement,
 } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
-import { color } from "framer-motion";
 
-const Education = ({ lightMode, educationData }) => {
+const Experience = ({ lightMode, experienceData }) => {
   useEffect(() => {
     AOS.init({ duration: 2000 });
   }, []);
@@ -23,11 +20,11 @@ const Education = ({ lightMode, educationData }) => {
     <div
       className={
         lightMode
-          ? " bg-[#FFFFF0] cursor-grab transition-colors duration-500 flex flex-col px-10  items-start  xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
+          ? " bg-[#FFFFF0] cursor-default transition-colors duration-500 flex flex-col px-10  items-start  xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
           : " transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
       }
     >
-      <section id="education">
+      <section id="experience">
         <div className="mt-10 2xl:mt-28">
           <Slide in={true} timeout={1000}>
             <section id="about">
@@ -39,11 +36,11 @@ const Education = ({ lightMode, educationData }) => {
                     : "text-white font-semibold text-4xl xl:text-6xl"
                 }
               >
-                Educ
+                Expe
                 <span
                   className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}
                 >
-                  ation
+                  rience
                 </span>
               </p>
             </section>
@@ -65,7 +62,7 @@ const Education = ({ lightMode, educationData }) => {
         lineColor={lightMode ? "rgb(13, 148, 136)" : "#FEC45D"}
         className=""
       >
-        {educationData.map((item) => (
+        {experienceData.map((item) => (
           <VerticalTimelineElement
             key={item.id}
             contentStyle={{
@@ -84,7 +81,7 @@ const Education = ({ lightMode, educationData }) => {
             }}
             date={
               <span style={{ color: lightMode ? "#000000 " : "#fff" }}>
-                {item.year}
+                {item.date}
               </span>
             }
             icon={
@@ -92,7 +89,7 @@ const Education = ({ lightMode, educationData }) => {
                 <img
                   src={item.imageUrl}
                   alt="Icon"
-                  className="w-full h-full rounded-full "
+                  className="w-full h-full rounded-full"
                 />
               </div>
             }
@@ -100,13 +97,13 @@ const Education = ({ lightMode, educationData }) => {
             <div
               className={
                 lightMode
-                  ? "text-black text-center flex flex-col"
-                  : "text-white text-center flex flex-col"
+                  ? "text-black flex flex-col"
+                  : "text-white flex flex-col"
               }
             >
               <img
                 src={item.imageUrl}
-                alt={`${item.school} Image`}
+                alt={`${item.company} Image`}
                 className="rounded-md h-[15rem]"
               />
               <div
@@ -116,15 +113,30 @@ const Education = ({ lightMode, educationData }) => {
                     : "border-b-2 my-2 border-b-[#FEC45D]"
                 }
               ></div>
-              <li className="list-none font-poppins font-semibold text-lg">
-                {item.level}
+              <li className="list-none font-poppins font-semibold text-xl uppercase">
+                {" "}
+                {item.company}
               </li>
-              <li className="list-none font-poppins font-normal text-sm">
-                {item.school}
+              <li className="list-none font-poppins font-semibold text-md uppercase">
+                {item.job}
               </li>
-              <li className="list-none font-poppins font-normal text-sm">
-                {item.course}
-              </li>
+              <ul className="mt-4 font-poppins text-sm max_sm:text-xs sm:text-xs md:text-sm">
+                <li className="font-poppin font-normal ">
+                  {item.description[0]}
+                </li>
+                <li className="mt-4 font-poppin font-normal">
+                  {item.description[1]}
+                </li>
+                <li className="mt-4 font-poppin font-normal">
+                  {item.description[2]}
+                </li>
+                <li className="mt-4 font-poppin font-normal">
+                  {item.description[3]}
+                </li>
+                <li className="mt-4 font-poppin font-normal">
+                  {item.description[4]}
+                </li>
+              </ul>
             </div>
           </VerticalTimelineElement>
         ))}
@@ -133,4 +145,4 @@ const Education = ({ lightMode, educationData }) => {
   );
 };
 
-export default Education;
+export default Experience;

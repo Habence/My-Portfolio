@@ -10,12 +10,16 @@ const Skills = ({ lightMode }) => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  useEffect(() => {
+    AOS.refresh(); // Refresh AOS on every render to ensure animations work correctly
+  });
+
   return (
     <div
       className={
         lightMode
-          ? " bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
-          : " transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
+          ? " bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
+          : " transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
       }
     >
       {/* ============== //SKILLS SECTION ============== */}

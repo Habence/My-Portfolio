@@ -11,8 +11,8 @@ const Hero = ({ lightMode }) => {
       id="home"
       className={
         lightMode
-          ? "bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
-          : " transition-colors duration-500 flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:pt-[10rem] sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 2xl:pt-48"
+          ? "bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:px-24 md:px-20  lg:px-28 xl:px-40 2xl:px-54 2xl:pt-48"
+          : " transition-colors duration-500 flex flex-col px-10 pt-[10rem] py-10 items-start cursor-default xs:px-5 xs:pt-[10rem] sm:pt-[10rem] sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 2xl:pt-48"
       }
     >
       <div

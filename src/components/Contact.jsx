@@ -17,12 +17,17 @@ import Swal from "sweetalert2";
 
 const Contact = ({ lightMode, setLightMode }) => {
   const [isLoading, setIsLoading] = useState(false);
+  const [isSubmit, setSubmit] = useState(false);
   const googleMapsUrl =
     "https://www.google.com/maps/place/Baguio,+Benguet/data=!4m2!3m1!1s0x3391a16879def13f:0x8edef534be3a75c0?sa=X&ved=1t:242&ictx=111";
 
   useEffect(() => {
     AOS.init({ duration: 1000 });
   }, []);
+
+  useEffect(() => {
+    AOS.refresh(); // Refresh AOS on every render to ensure animations work correctly
+  });
 
   const handleClick = () => {
     setIsLoading(true);
@@ -34,9 +39,36 @@ const Contact = ({ lightMode, setLightMode }) => {
 
   const form = useRef();
 
+  const handleSubmit = () => {
+    setSubmit(true);
+    Swal.fire({
+      title: "Sending...",
+      customClass: {
+        popup: lightMode ? "swal2-popup-light" : "swal2-popup-dark",
+      },
+      allowOutsideClick: false,
+      didOpen: () => {
+        Swal.showLoading();
+      },
+    });
+
+    setTimeout(() => {
+      Swal.fire({
+        icon: "success",
+        title: "Message Sent",
+        text: "Thanks!",
+        showConfirmButton: false,
+        timer: 2000,
+        customClass: {
+          popup: lightMode ? "swal2-popup-light" : "swal2-popup-dark",
+        },
+      });
+      setIsLoading(false);
+    }, 1000);
+  };
+
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs
       .sendForm("service_y2nr9qy", "template_qaw6ukw", form.current, {
         publicKey: "h0YauzHnDTT0apT1E",
@@ -50,24 +82,15 @@ const Contact = ({ lightMode, setLightMode }) => {
         }
       );
     e.target.reset();
-    Swal.fire({
-      icon: "success",
-      title: "Message Sent",
-      text: "Thanks!",
-      showConfirmButton: false,
-      timer: 2000,
-      customClass: {
-        popup: lightMode ? "swal2-popup-light" : "swal2-popup-dark",
-      },
-    });
+    handleSubmit();
   };
 
   return (
     <div
       className={
         lightMode
-          ? "flex flex-col px-10 pb-10 items-start cursor-default transition-colors duration-500 xs:px-5 md:px-20 sm:px- bg-slate-300 lg:px-28 xl:px-40 2xl:px-56"
-          : "flex bg-opacity-55 flex-col px-10 pb-10 items-start cursor-default transition-colors duration-500  xs:px-5 md:px-20 sm:px- bg-[#31333b] lg:px-28 xl:px-40 2xl:px-56"
+          ? "flex flex-col px-10 pb-10 items-start cursor-default transition-colors duration-500 xs:px-5 md:px-20 sm:px- bg-slate-300 lg:px-28 xl:px-40 2xl:px-54"
+          : "flex bg-opacity-55 flex-col px-10 pb-10 items-start cursor-default transition-colors duration-500  xs:px-5 md:px-20 sm:px- bg-[#31333b] lg:px-28 xl:px-40 2xl:px-54"
       }
     >
       {/* ============== //CONTACT SECTION ============== */}

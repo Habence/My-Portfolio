@@ -15,6 +15,10 @@ const Work = ({ lightMode }) => {
     AOS.init({ duration: 2000 });
   }, []);
 
+  useEffect(() => {
+    AOS.refresh(); // Refresh AOS on every render to ensure animations work correctly
+  });
+
   const [isFullView, setIsFullView] = useState(false);
   const [currentImage, setCurrentImage] = useState("");
 
@@ -31,14 +35,14 @@ const Work = ({ lightMode }) => {
     <div
       className={
         lightMode
-          ? " bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
-          : " transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-56 "
+          ? " bg-[#FFFFF0] transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
+          : " transition-colors duration-500 flex flex-col px-10  items-start cursor-default xs:px-5 sm:px-[6rem] md:px-20 lg:px-28 xl:px-40 2xl:px-54 "
       }
     >
-      {/* ============== //SELECTED WORKS SECTION ============== */}
+      {/* ============== //SELECTED PROJECTS SECTION ============== */}
       <div className="mt-10">
         <Slide in={true} timeout={1000}>
-          <section id="work">
+          <section id="project">
             <p
               data-aos="fade-right"
               className={
@@ -47,10 +51,9 @@ const Work = ({ lightMode }) => {
                   : "text-white font-semibold text-4xl xl:text-6xl"
               }
             >
-              Selected{" "}
+              Proj
               <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
-                {" "}
-                Works
+                ects
               </span>
             </p>
           </section>

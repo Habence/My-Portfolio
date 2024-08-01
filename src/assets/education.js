@@ -20,8 +20,9 @@ const seniorLevel = [
     icon: graduate,
     year: "Aug 2018 - Jul 2020",
     level: "Senior High School",
+    school: "University of the Cordilleras ",
     course: "INFORMATION AND COMMUNICATIONS TECHNOLOGY (ICT)",
-    school: "UNIVERSITY OF THE CORDILLERAS ",
+
     imageUrl:
       "https://lh3.googleusercontent.com/p/AF1QipP-pfogS8b4itQU9FtBFJgCOTK8rjTnO88OO5Q=s1360-w1360-h1020",
   },
@@ -34,7 +35,7 @@ const collegeLevel = [
     icon: graduate,
     year: "Aug 2020 - Sep 2023",
     level: "College",
-    school: "UNIVERSITY OF THE CORDILLERAS ",
+    school: "University of the Cordilleras ",
     course: "BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY",
     imageUrl:
       "https://lh3.googleusercontent.com/p/AF1QipP-pfogS8b4itQU9FtBFJgCOTK8rjTnO88OO5Q=s1360-w1360-h1020",

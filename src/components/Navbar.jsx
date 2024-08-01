@@ -61,8 +61,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
       <div
         className={
           lightMode
-            ? "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-5 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56"
-            : "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-5 max-sm:px-20 sm:px- md:px-20 lg:px-28 xl:px-40 2xl:px-56"
+            ? "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-5 max-sm:px-20 md:px-20 lg:px-28 xl:px-38 2xl:px-54"
+            : "flex flex-row px-10 py-5 justify-between items-center relative cursor-default xs:px-5 max-sm:px-20 md:px-20 lg:px-28 xl:px-38 2xl:px-54"
         }
       >
         <Slide in={true} direction="right" timeout={1000}>
@@ -92,7 +92,10 @@ const Navbar = ({ lightMode, setLightMode }) => {
           </div>
         </Slide>
         <Slide in={true} direction="left" timeout={1000}>
-          <div onClick={handleNav} className="cursor-pointer z-50 md:hidden">
+          <div
+            onClick={handleNav}
+            className="cursor-pointer z-50 lg:flex xl:hidden"
+          >
             {nav ? (
               <IoIosClose
                 size={30}
@@ -110,8 +113,8 @@ const Navbar = ({ lightMode, setLightMode }) => {
           <ul
             className={
               lightMode
-                ? "flex flex-row gap-10 font-poppins font-semibold text-black hidden md:flex"
-                : "flex flex-row gap-10 font-poppins font-semibold text-white hidden md:flex"
+                ? "flex flex-row gap-10 font-poppins font-semibold text-black hidden xl:flex"
+                : "flex flex-row gap-10 font-poppins font-semibold text-white hidden xl:flex"
             }
           >
             <li
@@ -121,7 +124,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                   : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
               }
             >
-              <a href="#work">Work</a>
+              <a href="#about">About</a>
               <span
                 className={
                   lightMode
@@ -146,6 +149,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 }
               ></span>
             </li>
+
             <li
               className={
                 lightMode
@@ -153,7 +157,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                   : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
               }
             >
-              <a href="#about">About</a>
+              <a href="#experience">Experience</a>
               <span
                 className={
                   lightMode
@@ -162,6 +166,41 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 }
               ></span>
             </li>
+
+            <li
+              className={
+                lightMode
+                  ? "relative group hover:scale-110 duration-300 hover:text-teal-600"
+                  : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
+              }
+            >
+              <a href="#project">Projects</a>
+              <span
+                className={
+                  lightMode
+                    ? "block mx-auto mt-1 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"
+                    : "block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"
+                }
+              ></span>
+            </li>
+
+            <li
+              className={
+                lightMode
+                  ? "relative group hover:scale-110 duration-300 hover:text-teal-600"
+                  : "relative group hover:scale-110 duration-300 hover:text-[#FEC45D]"
+              }
+            >
+              <a href="#education">Education</a>
+              <span
+                className={
+                  lightMode
+                    ? "block mx-auto mt-1 w-0 h-0.5 bg-teal-600 transition-all duration-300 group-hover:w-full"
+                    : "block mx-auto mt-1 w-0 h-0.5 bg-[#FEC45D] transition-all duration-300 group-hover:w-full"
+                }
+              ></span>
+            </li>
+
             <li
               className={
                 lightMode
@@ -185,12 +224,12 @@ const Navbar = ({ lightMode, setLightMode }) => {
           <div
             className={
               lightMode
-                ? "fixed inset-0 duration-300 bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 md:hidden"
-                : "fixed inset-0 duration-300 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 md:hidden"
+                ? "fixed inset-0 duration-300 bg-[#FFFFF0] h-[100vh] text-black flex flex-col items-center justify-center z-40 xl:hidden"
+                : "fixed inset-0 duration-300 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 xl:hidden"
             }
           >
             <Slide in={true} direction="down" timeout={1000}>
-              <div className="absolute top-[9rem] left-2">
+              <div className="absolute top-[9rem] max_sm:-left-2 sm:left-32 lg:left-[19rem]">
                 <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
                   <span
                     className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}
@@ -208,28 +247,6 @@ const Navbar = ({ lightMode, setLightMode }) => {
                   <Slide in={true} direction="right" timeout={1000}>
                     <li>
                       <a
-                        href="#work"
-                        className="cursor-pointer"
-                        onClick={handleNav}
-                      >
-                        WORK
-                      </a>
-                    </li>
-                  </Slide>
-                  <Slide in={true} direction="left" timeout={1000}>
-                    <li>
-                      <a
-                        href="#skill"
-                        className="cursor-pointer"
-                        onClick={handleNav}
-                      >
-                        SKILL
-                      </a>
-                    </li>
-                  </Slide>
-                  <Slide in={true} direction="right" timeout={1000}>
-                    <li>
-                      <a
                         href="#about"
                         className="cursor-pointer"
                         onClick={handleNav}
@@ -238,6 +255,55 @@ const Navbar = ({ lightMode, setLightMode }) => {
                       </a>
                     </li>
                   </Slide>
+
+                  <Slide in={true} direction="left" timeout={1000}>
+                    <li>
+                      <a
+                        href="#skill"
+                        className="cursor-pointer"
+                        onClick={handleNav}
+                      >
+                        SKILLS
+                      </a>
+                    </li>
+                  </Slide>
+
+                  <Slide in={true} direction="left" timeout={1000}>
+                    <li>
+                      <a
+                        href="#experience"
+                        className="cursor-pointer"
+                        onClick={handleNav}
+                      >
+                        EXPERIENCE
+                      </a>
+                    </li>
+                  </Slide>
+
+                  <Slide in={true} direction="right" timeout={1000}>
+                    <li>
+                      <a
+                        href="#project"
+                        className="cursor-pointer"
+                        onClick={handleNav}
+                      >
+                        PROJECTS
+                      </a>
+                    </li>
+                  </Slide>
+
+                  <Slide in={true} direction="left" timeout={1000}>
+                    <li>
+                      <a
+                        href="#education"
+                        className="cursor-pointer"
+                        onClick={handleNav}
+                      >
+                        EDUCATION
+                      </a>
+                    </li>
+                  </Slide>
+
                   <Slide in={true} direction="left" timeout={1000}>
                     <li>
                       <a
@@ -252,7 +318,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 </ul>
               </Slide>
             </div>
-            <div className="mt-[28rem] flex flex-col gap-4">
+            <div className="mt-[34rem] flex flex-col gap-4">
               <Slide in={true} direction="right" timeout={1000}>
                 <p className="font-bold">micklayvince@gmail.com</p>
               </Slide>
