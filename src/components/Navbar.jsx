@@ -230,7 +230,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
           >
             <Slide in={true} direction="up" timeout={1000}>
               <div className="absolute top-[9rem] max_sm:-left-2 sm:left-32 lg:left-[19rem]">
-                <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
+                <p className="text-white font-bold text-xl tracking-widest -rotate-90">
                   <span
                     className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}
                   >
@@ -243,7 +243,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
 
             <div className="fixed top-28 bottom-0">
               <Slide in={true} timeout={1000}>
-                <ul className="space-y-10 text-5xl font-bold">
+                <ul className="space-y-10 text-3xl font-bold">
                   <Slide in={true} direction="right" timeout={1000}>
                     <li>
                       <a
@@ -318,7 +318,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 </ul>
               </Slide>
             </div>
-            <div className="mt-[40rem] flex flex-col gap-4">
+            <div className="mt-[32rem] flex flex-col gap-4">
               <Slide in={true} direction="right" timeout={1000}>
                 <p className="font-bold">micklayvince@gmail.com</p>
               </Slide>
