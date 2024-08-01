@@ -15,10 +15,6 @@ const Education = ({ lightMode, educationData }) => {
     AOS.init({ duration: 2000 });
   }, []);
 
-  useEffect(() => {
-    AOS.refresh(); // Refresh AOS on every render to ensure animations work correctly
-  });
-
   return (
     <div
       className={
@@ -107,7 +103,7 @@ const Education = ({ lightMode, educationData }) => {
               <img
                 src={item.imageUrl}
                 alt={`${item.school} Image`}
-                className="rounded-md h-[15rem]"
+                className="rounded-md h-[15rem] object-cover"
               />
               <div
                 className={
@@ -116,13 +112,13 @@ const Education = ({ lightMode, educationData }) => {
                     : "border-b-2 my-2 border-b-[#FEC45D]"
                 }
               ></div>
-              <li className="list-none font-poppins font-semibold text-lg">
+              <li className="list-none font-poppins font-semibold max_sm:text-sm text-lg">
                 {item.level}
               </li>
-              <li className="list-none font-poppins font-normal text-sm">
+              <li className="list-none font-poppins font-normal max_sm:text-xs text-sm">
                 {item.school}
               </li>
-              <li className="list-none font-poppins font-normal text-sm">
+              <li className="list-none font-poppins font-normal max_sm:text-xs text-sm">
                 {item.course}
               </li>
             </div>

@@ -113,11 +113,11 @@ const Experience = ({ lightMode, experienceData }) => {
                     : "border-b-2 my-2 border-b-[#FEC45D]"
                 }
               ></div>
-              <li className="list-none font-poppins font-semibold text-xl uppercase">
+              <li className="list-none font-poppins font-semibold max_sm:text-lg text-xl uppercase">
                 {" "}
                 {item.company}
               </li>
-              <li className="list-none font-poppins font-semibold text-md uppercase">
+              <li className="list-none font-poppins font-semibold max_sm:text-sm text-md uppercase">
                 {item.job}
               </li>
               <ul className="mt-4 font-poppins text-sm max_sm:text-xs sm:text-xs md:text-sm">

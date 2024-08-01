@@ -228,7 +228,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 : "fixed inset-0 duration-300 bg-black h-[100vh] text-white flex flex-col items-center justify-center z-40 xl:hidden"
             }
           >
-            <Slide in={true} direction="down" timeout={1000}>
+            <Slide in={true} direction="up" timeout={1000}>
               <div className="absolute top-[9rem] max_sm:-left-2 sm:left-32 lg:left-[19rem]">
                 <p className="text-white font-bold text-2xl tracking-widest -rotate-90">
                   <span
@@ -268,7 +268,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                     </li>
                   </Slide>
 
-                  <Slide in={true} direction="left" timeout={1000}>
+                  <Slide in={true} direction="right" timeout={1000}>
                     <li>
                       <a
                         href="#experience"
@@ -280,7 +280,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                     </li>
                   </Slide>
 
-                  <Slide in={true} direction="right" timeout={1000}>
+                  <Slide in={true} direction="left" timeout={1000}>
                     <li>
                       <a
                         href="#project"
@@ -292,7 +292,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                     </li>
                   </Slide>
 
-                  <Slide in={true} direction="left" timeout={1000}>
+                  <Slide in={true} direction="right" timeout={1000}>
                     <li>
                       <a
                         href="#education"
@@ -318,7 +318,7 @@ const Navbar = ({ lightMode, setLightMode }) => {
                 </ul>
               </Slide>
             </div>
-            <div className="mt-[34rem] flex flex-col gap-4">
+            <div className="mt-[40rem] flex flex-col gap-4">
               <Slide in={true} direction="right" timeout={1000}>
                 <p className="font-bold">micklayvince@gmail.com</p>
               </Slide>
