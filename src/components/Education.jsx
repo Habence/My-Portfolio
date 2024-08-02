@@ -12,7 +12,7 @@ import { color } from "framer-motion";
 
 const Education = ({ lightMode, educationData }) => {
   useEffect(() => {
-    AOS.init({ duration: 2000 });
+    AOS.init({ duration: 800 });
   }, []);
 
   return (
@@ -57,74 +57,77 @@ const Education = ({ lightMode, educationData }) => {
         ></div>
       </Slide>
 
-      <VerticalTimeline
-        lineColor={lightMode ? "rgb(13, 148, 136)" : "#FEC45D"}
-        className=""
-      >
-        {educationData.map((item) => (
-          <VerticalTimelineElement
-            key={item.id}
-            contentStyle={{
-              background: lightMode ? "#FFFFF0" : "#31333b",
-              color: "#fff",
-              boxShadow: lightMode
-                ? "0 0 20px rgb(13, 148, 136)"
-                : "0 0 20px #FEC45D",
-            }}
-            iconStyle={{
-              background: lightMode ? "#fff" : "#38343c",
-              color: "#fff",
-              boxShadow: lightMode
-                ? "0 0 20px rgb(13, 148, 136)"
-                : "0 0 50px #FEC45D",
-            }}
-            date={
-              <span style={{ color: lightMode ? "#000000 " : "#fff" }}>
-                {item.year}
-              </span>
-            }
-            icon={
-              <div className="flex justify-center items-center w-full h-full">
-                <img
-                  src={item.imageUrl}
-                  alt="Icon"
-                  className="w-full h-full rounded-full "
-                />
-              </div>
-            }
-          >
-            <div
-              className={
-                lightMode
-                  ? "text-black text-center flex flex-col"
-                  : "text-white text-center flex flex-col"
+      <div className="w-full" data-aos="fade-right">
+        <VerticalTimeline
+          lineColor={lightMode ? "rgb(13, 148, 136)" : "#FEC45D"}
+          className=""
+        >
+          {educationData.map((item) => (
+            <VerticalTimelineElement
+              key={item.id}
+              contentStyle={{
+                background: lightMode ? "#FFFFF0" : "#31333b",
+                color: "#fff",
+                boxShadow: lightMode
+                  ? "0 0 20px rgb(13, 148, 136)"
+                  : "0 0 20px #FEC45D",
+              }}
+              iconStyle={{
+                background: lightMode ? "#fff" : "#38343c",
+                color: "#fff",
+                boxShadow: lightMode
+                  ? "0 0 20px rgb(13, 148, 136)"
+                  : "0 0 50px #FEC45D",
+              }}
+              date={
+                <span style={{ color: lightMode ? "#000000 " : "#fff" }}>
+                  {item.year}
+                </span>
+              }
+              icon={
+                <div className="flex justify-center items-center w-full h-full">
+                  <img
+                    src={item.imageUrl}
+                    alt="Icon"
+                    className="w-full h-full rounded-full "
+                  />
+                </div>
               }
             >
-              <img
-                src={item.imageUrl}
-                alt={`${item.school} Image`}
-                className="rounded-md h-[15rem] object-cover"
-              />
               <div
                 className={
                   lightMode
-                    ? "border-b-2 my-2 border-b-teal-600"
-                    : "border-b-2 my-2 border-b-[#FEC45D]"
+                    ? "text-black text-center flex flex-col"
+                    : "text-white text-center flex flex-col"
                 }
-              ></div>
-              <li className="list-none font-poppins font-semibold max_sm:text-sm text-lg">
-                {item.level}
-              </li>
-              <li className="list-none font-poppins font-normal max_sm:text-xs text-sm">
-                {item.school}
-              </li>
-              <li className="list-none font-poppins font-normal max_sm:text-xs text-sm">
-                {item.course}
-              </li>
-            </div>
-          </VerticalTimelineElement>
-        ))}
-      </VerticalTimeline>
+              >
+                <img
+                  src={item.imageUrl}
+                  alt={`${item.school} Image`}
+                  className="rounded-md h-[15rem] object-cover"
+                />
+                <div
+                  className={
+                    lightMode
+                      ? "border-b-2 my-2 border-b-teal-600"
+                      : "border-b-2 my-2 border-b-[#FEC45D]"
+                  }
+                ></div>
+
+                <li className="list-none font-poppins font-semibold max_sm:text-sm text-lg">
+                  {item.level}
+                </li>
+                <li className="list-none font-poppins font-normal max_sm:text-xs text-sm">
+                  {item.school}
+                </li>
+                <li className="list-none font-poppins font-normal max_sm:text-xs text-sm">
+                  {item.course}
+                </li>
+              </div>
+            </VerticalTimelineElement>
+          ))}
+        </VerticalTimeline>
+      </div>
     </div>
   );
 };
