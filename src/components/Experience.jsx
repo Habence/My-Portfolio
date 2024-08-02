@@ -29,7 +29,7 @@ const Experience = ({ lightMode, experienceData }) => {
           <Slide in={true} timeout={1000}>
             <section id="about">
               <p
-                data-aos="fade-right"
+                data-aos="slide-right"
                 className={
                   lightMode
                     ? "text-black font-semibold text-4xl xl:text-6xl"
