@@ -54,7 +54,7 @@ const About = ({ lightMode }) => {
       </Slide>
 
       <div
-        data-aos="slide-right"
+        data-aos="slide-up"
         className={
           lightMode
             ? "mt-10 inner-carousel text-black font-poppins font-normal text-xs md:pr-[10rem] leading-relaxed lg:text-base lg:pr-[15rem] 2xl:pr-[20rem] 2xl:text-lg"
