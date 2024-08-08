@@ -36,7 +36,7 @@ const Skills = ({ lightMode }) => {
               Skills &{" "}
               <span className={lightMode ? "text-teal-600" : "text-[#FEC45D]"}>
                 {" "}
-                Knowledge
+                Tools
               </span>
             </p>
           </section>
