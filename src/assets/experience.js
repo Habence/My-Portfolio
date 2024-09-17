@@ -39,7 +39,8 @@ const helper = [
   {
     key: 3,
     id: 3,
-    imageUrl: "https://live.staticflickr.com/3819/12946533744_75008a56cb_b.jpg",
+    imageUrl:
+      "https://baguiocityguide.com/wp-content/uploads/2016/02/Texas-Instruments.jpg",
     job: "Helper",
     date: "May 2024 - June 2024",
     company: "Susalum Corporation (In T.I)",
