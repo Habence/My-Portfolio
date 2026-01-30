@@ -63,28 +63,21 @@ const About = ({ lightMode }) => {
       >
         <Zoom in={true} timeout={1000}>
           <p>
-            As a seasoned Web Developer based in Baguio City, Philippines, I
-            hold a Bachelor of Science in Information Technology (BSIT) from the
-            University of the Cordilleras. I specialize in crafting dynamic and
-            responsive websites using JavaScript, HTML, CSS, and ReactJS. My
-            expertise extends to mobile app development with Java and Android
-            Studio, where I collaboratively implemented a QR code transaction
-            system for a recycling app as part of our capstone project.
-            Additionally, my internship as a Junior Backend Developer at
-            BitShares Labs Inc. honed my skills in enhancing user interactions
-            through a Discord chatbot powered by neural networks.
+            I’m an IT graduate based in Baguio City, Philippines, with hands-on
+            experience in web development and technical support. I build clean,
+            responsive websites using HTML, CSS, Tailwind CSS, JavaScript, and
+            React, and I’m comfortable working with version control using Git
+            and GitHub.
           </p>
         </Zoom>
         <br />
         <Zoom in={true} timeout={1000}>
           <p>
-            I am committed to continuous learning and professional growth,
-            having attended various seminars and courses to expand my skill set.
-            Proficient in version control with Git and database management with
-            MySQL, I am eager to apply my foundational programming skills in an
-            entry-level role. My goal is to contribute to meaningful projects
-            and collaborate with experienced professionals to drive digital
-            transformation and innovative solutions.
+            I also have experience supporting systems, users, and internal tools
+            in a professional work environment. I enjoy learning new
+            technologies, improving workflows, and contributing to practical,
+            real world projects whether through development, technical
+            assistance, or collaboration with a team.
           </p>
         </Zoom>
       </div>

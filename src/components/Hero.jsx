@@ -61,16 +61,26 @@ const Hero = ({ lightMode }) => {
                   >
                     front-end{" "}
                     <ReactTyped
-                      strings={["Developer"]}
+                      strings={["Developer | IT Support"]}
                       typeSpeed={40}
                       backSpeed={40}
                       loop
                     />
                   </span>{" "}
                 </div>
-                based in Baguio City, Philippines.
+                Building responsive web interfaces and supporting real-world
+                systems used in daily operations.
                 <br />
-                Bachelor of Science in IT from the{" "}
+                <span
+                  className={
+                    lightMode
+                      ? "text-teal-600 font-semibold "
+                      : "text-[#FEC45D] font-semibold "
+                  }
+                >
+                  BSIT{" "}
+                </span>{" "}
+                from the{" "}
                 <span
                   className={
                     lightMode
@@ -81,37 +91,9 @@ const Hero = ({ lightMode }) => {
                   University of the Cordilleras.
                 </span>
                 <br />
-                Passionate about creating{" "}
-                <span
-                  className={
-                    lightMode
-                      ? "text-teal-600 font-semibold "
-                      : "text-[#FEC45D] font-semibold "
-                  }
-                >
-                  dynamic and responsive websites.
-                </span>
-                <br />
-                Seeking an{" "}
-                <span
-                  className={
-                    lightMode
-                      ? "text-teal-600 font-semibold "
-                      : "text-[#FEC45D] font-semibold "
-                  }
-                >
-                  entry-level role
-                </span>{" "}
-                to work on{" "}
-                <span
-                  className={
-                    lightMode
-                      ? "text-teal-600 font-semibold "
-                      : "text-[#FEC45D] font-semibold "
-                  }
-                >
-                  meaningful projects.
-                </span>
+                Experience in web development, technical support, and
+                administrative tools. Open to entry-level roles and hands-on
+                projects.
               </p>
             </div>
           </Slide>
