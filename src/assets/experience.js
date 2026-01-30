@@ -35,21 +35,23 @@ const csr = [
   },
 ];
 
-const helper = [
+const it_assistant = [
   {
     key: 3,
     id: 3,
     imageUrl:
-      "https://baguiocityguide.com/wp-content/uploads/2016/02/Texas-Instruments.jpg",
-    job: "Helper",
-    date: "May 2024 - June 2024",
-    company: "Susalum Corporation (In T.I)",
+      "https://res.klook.com/klook-hotel/image/upload/fl_lossy.progressive,w_1200,h_630,c_fill,q_85/travelapi/19000000/18550000/18541900/18541846/d1eb6c74_z.jpg",
+    job: "IT Assistant",
+    date: "September 2024 - October 2025",
+    company: "John Hay Hotels Forest Wing (Formerly The Forest Lodge)",
     description: [
-      "• Assisted in the repair, cutting, and installation of pipes.",
-      "• Performed housekeeping duties to maintain a clean and organized work environment.",
-      "• Lifted and transported materials required for various projects.",
+      "• Provided first-level technical and system support for hotel operations (OPERA PMS, POS, user accounts)",
+      "• Managed system access, user setup, and daily operational support for staff",
+      "• Maintained internal websites and digital signage used across hotel departments",
+      "• Monitored systems and devices, escalating issues when needed",
+      "• Assisted with workstation setup and basic hardware troubleshooting",
     ],
   },
 ];
 
-export { developer, csr, helper };
+export { developer, csr, it_assistant };

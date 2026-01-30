@@ -1,8 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import finance from "../../public/finance.png";
+import cms from "../../public/cms.png";
 import perfume from "../../public/perfume.png";
 import film from "../../public/film.png";
+import christmas from "../../public/christmas.png";
 import notes from "../../public/notes.png";
 import Zoom from "@mui/material/Zoom";
 import Slide from "@mui/material/Slide";
@@ -86,17 +87,17 @@ const Work = ({ lightMode }) => {
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
-                onClick={() => handleImageClick(film)}
-                src={film}
-                alt="film"
+                onClick={() => handleImageClick(christmas)}
+                src={christmas}
+                alt="christmas"
                 className="cursor-zoom-in h-72 w-full rounded-t-lg object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="right" timeout={1000}>
-              <p className="ml-2 my-2 2xl:text-xl">Movie Website</p>
+              <p className="ml-2 my-2 2xl:text-xl">Christmas Website</p>
             </Slide>
             <a
-              href="https://film-project-indol.vercel.app/"
+              href="https://forest-lodge.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className={
@@ -120,17 +121,17 @@ const Work = ({ lightMode }) => {
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
-                onClick={() => handleImageClick(finance)}
-                src={finance}
-                alt="finance"
+                onClick={() => handleImageClick(cms)}
+                src={cms}
+                alt="cms"
                 className="cursor-zoom-in rounded-t-lg h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="left" timeout={1000}>
-              <p className="ml-2 my-2 2xl:text-xl">Finance Website</p>
+              <p className="ml-2 my-2 2xl:text-xl">Forestwing CMS</p>
             </Slide>
             <a
-              href="https://finance-project-pink.vercel.app/"
+              href="https://forest-wing-cms-demo.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className={
@@ -154,17 +155,17 @@ const Work = ({ lightMode }) => {
           <div data-aos="flip-up">
             <Zoom in={true} timeout={1000}>
               <img
-                onClick={() => handleImageClick(perfume)}
-                src={perfume}
-                alt="perfume"
+                onClick={() => handleImageClick(film)}
+                src={film}
+                alt="film"
                 className="cursor-zoom-in rounded-t-lg h-72 w-full object-cover md:h-[20rem] lg:h-[22rem] lg:object-cover"
               />
             </Zoom>
             <Slide in={true} direction="right" timeout={1000}>
-              <p className="ml-2 my-2 2xl:text-xl">Perfume Website</p>
+              <p className="ml-2 my-2 2xl:text-xl">Film Trailers</p>
             </Slide>
             <a
-              href="https://perfume-rho.vercel.app/"
+              href="https://film-project-indol.vercel.app/"
               target="_blank"
               rel="noopener noreferrer"
               className={

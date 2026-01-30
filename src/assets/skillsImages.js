@@ -7,5 +7,17 @@ import mysql from "../../public/mysql.png";
 import php from "../../public/php.png";
 import git from "../../public/git.png";
 import vscode from "../../public/vscode.png";
+import christmas from "../../public/christmas.png";
 
-export default [html, css, js, react, firebase, mysql, php, git, vscode];
+export default [
+  html,
+  css,
+  js,
+  react,
+  firebase,
+  mysql,
+  php,
+  git,
+  vscode,
+  christmas,
+];
