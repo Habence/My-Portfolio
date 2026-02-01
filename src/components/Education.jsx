@@ -1,7 +1,6 @@
 import React, { useEffect } from "react";
 import Zoom from "@mui/material/Zoom";
 import Slide from "@mui/material/Slide";
-import graduate from "/public/graduate.svg";
 import AOS from "aos";
 import {
   VerticalTimeline,

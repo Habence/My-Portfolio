@@ -1,10 +1,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { FaArrowRight } from "react-icons/fa";
-import cms from "../../public/cms.png";
-import perfume from "../../public/perfume.png";
-import film from "../../public/film.png";
-import christmas from "../../public/christmas.png";
-import notes from "../../public/notes.png";
+import cms from "../assets/images/cms.png";
+import film from "../assets/images/film.png";
+import christmas from "../assets/images/christmas.png";
+import notes from "../assets/images/notes.png";
 import Zoom from "@mui/material/Zoom";
 import Slide from "@mui/material/Slide";
 import AOS from "aos";

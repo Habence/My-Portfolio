@@ -281,8 +281,35 @@ const Skills = ({ lightMode }) => {
             </div>
             <Slide in={true} timeout={1000}>
               <p className="text-center mt-2 font-poppins font-semibold text-xs xl:text-2xl">
-                Visual Studio <br />
-                Code
+                Visual Studio
+              </p>
+            </Slide>
+          </div>
+        </div>
+
+        <div
+          className={
+            lightMode
+              ? "flex flex-col text-black font-poppins font-normal shadow-lg rounded-xl hover:scale-105 duration-300"
+              : "flex flex-col text-white font-poppins font-normal shadow-xl border-y-2 bg-black bg-opacity-35 border-gray-500 rounded-xl hover:scale-105 hover:bg-black hover:bg-opacity-50 hover:border-black duration-300"
+          }
+        >
+          <div
+            data-aos="fade-right"
+            className="w-32 h-32 py-9 flex flex-col cursor-default xl:w-[20rem] xl:h-[20rem] xl:p-24 xl:gap-4"
+          >
+            <div data-aos="fade-right" className=" flex justify-center">
+              <Zoom in={true} timeout={1000}>
+                <img
+                  src={skillsImages[10]}
+                  alt=""
+                  className="h-10 xl:h-[6rem]"
+                />
+              </Zoom>
+            </div>
+            <Slide in={true} timeout={1000}>
+              <p className="text-center mt-2 font-poppins font-semibold text-xs xl:text-2xl">
+                Canva
               </p>
             </Slide>
           </div>

@@ -44,6 +44,23 @@ const Hero = ({ lightMode }) => {
         >
           <Slide in={true} direction="right" timeout={1000}>
             <div className="xs:mt-10 sm:mt-10">
+              <div>
+                <span
+                  className={
+                    lightMode
+                      ? "text-teal-600 font-semibold text-2xl uppercase 2xl:text-3xl"
+                      : "text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl"
+                  }
+                >
+                  front-end{" "}
+                  <ReactTyped
+                    strings={["Developer | IT Support"]}
+                    typeSpeed={40}
+                    backSpeed={40}
+                    loop
+                  />
+                </span>{" "}
+              </div>
               <p
                 className={
                   lightMode
@@ -51,23 +68,6 @@ const Hero = ({ lightMode }) => {
                     : "text-white font-poppins font-normal text-lg leading-relaxed lg:text-xl lg:pr-10 xl:text-2xl 2xl:text-2xl"
                 }
               >
-                <div>
-                  <span
-                    className={
-                      lightMode
-                        ? "text-teal-600 font-semibold text-2xl uppercase 2xl:text-3xl"
-                        : "text-[#FEC45D] font-semibold text-2xl uppercase 2xl:text-3xl"
-                    }
-                  >
-                    front-end{" "}
-                    <ReactTyped
-                      strings={["Developer | IT Support"]}
-                      typeSpeed={40}
-                      backSpeed={40}
-                      loop
-                    />
-                  </span>{" "}
-                </div>
                 Building responsive web interfaces and supporting real-world
                 systems used in daily operations.
                 <br />

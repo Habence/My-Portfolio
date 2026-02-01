@@ -1,4 +1,4 @@
-import graduate from "/public/graduate.svg";
+import graduate from "../assets/images/graduate.svg";
 const juniorLevel = [
   {
     key: 1,

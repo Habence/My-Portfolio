@@ -40,20 +40,20 @@ export default {
           "background-attachment": "fixed",
           "background-position": "center",
           "background-size": "cover",
-          "background-image": "url('../public/spaceWebsite.jpg')",
+          "background-image": "url('/spaceWebsite.jpg')",
         },
         ".yellowCoder": {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/yellowCoder.svg')",
+          "background-image": "url('/yellowCoder.svg')",
         },
 
         ".blueCoder": {
           "@apply bg-center bg-no-repeat bg-cover": {},
           "background-attachment": "fixed",
           "background-position": "center",
-          "background-image": "url('../public/lightCoder.svg')",
+          "background-image": "url('/lightCoder.svg')",
         },
         ".swal2-popup-light": {
           "background-color": "white",

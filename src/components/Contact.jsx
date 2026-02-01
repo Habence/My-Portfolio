@@ -378,7 +378,7 @@ const Contact = ({ lightMode, setLightMode }) => {
                 : "font-poppins font-semibold text-[#FEC45D] text-2xl md:text-4xl xl:text-6xl xl:p-10"
             }
           >
-            "Thanks for Scrolling"
+            "Thanks for visiting"
           </p>
         </Slide>
       </div>
