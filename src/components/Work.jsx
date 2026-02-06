@@ -144,7 +144,7 @@ const Work = ({ lightMode }) => {
           </div>
         </div>
 
-        <div
+        {/* <div
           className={
             lightMode
               ? "w-full border-b-2  backdrop-blur-xs shadow-xl rounded-xl hover:scale-105 hover:opacity-80 duration-300 md:h-[24rem] lg:w-[23rem] lg:h-[27rem] xl:w-[29rem] 2xl:w-[33rem]"
@@ -176,7 +176,7 @@ const Work = ({ lightMode }) => {
               View Website <FaArrowRight className="ml-1 mt-[0.10rem]" />
             </a>
           </div>
-        </div>
+        </div> */}
 
         <div
           className={
@@ -195,7 +195,7 @@ const Work = ({ lightMode }) => {
               />
             </Zoom>
             <Slide in={true} direction="left" timeout={1000}>
-              <p className="ml-2 my-2 2xl:text-xl">Keeper Notes Website</p>
+              <p className="ml-2 my-2 2xl:text-xl">Keeper Notes</p>
             </Slide>
             <a
               href="https://keepernotesbence.vercel.app/"
