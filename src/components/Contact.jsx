@@ -3,6 +3,7 @@ import { MdEmail } from "react-icons/md";
 import { FaPhoneAlt } from "react-icons/fa";
 import { FaLocationDot } from "react-icons/fa6";
 import { FaFacebookSquare } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaTelegram } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
@@ -79,7 +80,7 @@ const Contact = ({ lightMode, setLightMode }) => {
         },
         (error) => {
           console.log("FAILED...", error.text);
-        }
+        },
       );
     e.target.reset();
     handleSubmit();
@@ -320,23 +321,37 @@ const Contact = ({ lightMode, setLightMode }) => {
           <div data-aos="flip-up" className="flex flex-col text-center w-full">
             <Slide in={true} direction="up" timeout={1000}>
               <div className="flex my-8  gap-12 w-full px-6 sm:flex sm:justify-center">
-                <FaFacebookSquare
-                  size={30}
-                  className={
-                    lightMode
-                      ? "hover:animate-spin text-teal-600"
-                      : "hover:animate-spin text-[#FEC45D]"
-                  }
-                />
-                <FaInstagram
-                  size={30}
-                  className={
-                    lightMode
-                      ? "hover:animate-spin text-teal-600"
-                      : "hover:animate-spin text-[#FEC45D]"
-                  }
-                />
-                <FaTelegram
+                <a
+                  href="https://www.facebook.com/micklayvince"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {" "}
+                  <FaFacebookSquare
+                    size={30}
+                    className={
+                      lightMode
+                        ? "hover:animate-spin text-teal-600"
+                        : "hover:animate-spin text-[#FEC45D]"
+                    }
+                  />
+                </a>
+                <a
+                  href="https://github.com/Habence"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaGithub
+                    size={30}
+                    className={
+                      lightMode
+                        ? "hover:animate-spin text-teal-600"
+                        : "hover:animate-spin text-[#FEC45D]"
+                    }
+                  />
+                </a>
+
+                {/* <FaTelegram
                   size={30}
                   className={
                     lightMode
@@ -351,7 +366,7 @@ const Contact = ({ lightMode, setLightMode }) => {
                       ? "hover:animate-spin text-teal-600"
                       : "hover:animate-spin text-[#FEC45D]"
                   }
-                />
+                /> */}
               </div>
             </Slide>
           </div>
